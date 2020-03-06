@@ -1,0 +1,201 @@
+body {
+    background-color: white;
+    font-family: 'DM Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    padding-right: 1em;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    color: black;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+}
+
+hr {
+    width: 50%;
+    margin-top: 3em;
+}
+
+.container {
+    padding-top: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    margin: 1em;
+}
+
+.slide-up {
+    animation-name: slide-up;
+    animation-duration: 1s;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translate(0, 16px);
+        opacity: 0%;
+    }
+    to {
+        transform: translate(0, 0%);
+        opacity: 100%;
+    }
+}
+
+.slide-right-highlight {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(252, 87, 27, 0.644) 50%);
+    animation-name: slide-right-highlight;
+    animation-duration: 2s;
+}
+
+@keyframes slide-right-highlight {
+    from {
+        background:
+    }
+    to {
+        background:
+    }
+}
+
+.banner {
+    padding-top: 30vh;
+    padding-bottom: 3em;
+    margin-top: 0px;
+}
+
+.secondary-banner {
+    padding-top: 4em;
+    padding-bottom: 1em;
+    margin-top: 0px;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+}
+
+nav a {
+    font-weight: 700;
+    font-size: 12px;
+    transition: color .3s;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 1em;
+    margin: 0;
+    background-color: white;
+    overflow: auto;
+}
+
+.nav-title {
+    float: left;
+}
+
+.nav-title a:hover {
+    color: rgb(252, 87, 27);
+}
+
+.nav-item {
+    float: right;
+    margin-right: 1em;
+    opacity: 25%;
+    transition: opacity .3s;
+}
+
+.nav-item:hover {
+    opacity: 100%;
+    transition: opacity .3s;
+}
+
+.active {
+    opacity: 100%;
+}
+
+.project {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-desc {
+    position: absolute;
+    left: 6em;
+    top: 40%;
+}
+
+.project-desc h3,
+.project-desc p {
+    color: white;
+}
+
+.project img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.social {
+    font-size: 20px;
+    text-align: center;
+}
+
+.social a {
+    color: black;
+    margin-left: 1em;
+    margin-right: 1em;
+    transition: color .3s;
+}
+
+.social a:hover {
+    color: rgb(252, 87, 27);
+    transition: color .3s;
+}
+
+footer {
+    margin: 2em;
+    margin-left: 5em;
+    display: inline-block;    
+    text-align: center;
+}
+
+footer h4 {
+    padding-top: 1em;
+    color: black;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+#profile-pic {
+    border-radius: 50%;
+    width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding-top: 1em;
+        padding-left: 3em;
+        padding-right: 3em;
+        margin: 1em;
+    }
+
+    .project-desc {
+        left: 4em;
+    }
+}
