@@ -59,14 +59,14 @@ hr {
     animation-duration: 2s;
 }
 
-@keyframes slide-right-highlight {
+/* @keyframes slide-right-highlight {
     from {
         background:
     }
     to {
         background:
     }
-}
+} */
 
 .banner {
     padding-top: 30vh;
