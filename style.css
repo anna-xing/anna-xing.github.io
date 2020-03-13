@@ -166,7 +166,6 @@ nav ul {
 
 footer {
     margin: 2em;
-    margin-left: 5em;
     display: inline-block;    
     text-align: center;
 }
@@ -185,13 +184,6 @@ footer h4 {
 
 @media only screen and (max-width: 600px) {
     .container {
-        padding-top: 1em;
-        padding-left: 3em;
-        padding-right: 3em;
-        margin: 1em;
-    }
-
-    .project-desc {
-        left: 4em;
+        padding-top: 1em 3em;
     }
 }
