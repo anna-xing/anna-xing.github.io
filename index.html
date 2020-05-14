@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -21,17 +18,92 @@
 
         <section class="banner">
             <div class="container">
-                <h1>Hello! I'm <span class="slide-right-highlight">Anna Xing.</span></h1>
-                <br>
-                <p>This site is currently under construction.<br>Feel free to check out my resume linked above, or contact me via the links below.</p>
+                <h1>Hello! I'm Anna Xing.</h1>
+                <p>
+                    I'm passionate about using tech, design, and data for social good.
+                </p>
             </div>
         </section>
- 
-        <div id="footer-placeholder"></div>
-        
+
+        <section id="projects" class="container">
+            <div class="heading">
+                <h2>Projects</h2>
+            </div>
+
+            <a href="hurrevac.html">
+                <div id="hurrevac" class="project">
+                    <div class="project-desc">
+                        <h3>Hurricane Evac</h3>
+                        <p>Helping populations in hurricane-prone areas determine the safest course of evacuation.</p>
+                    </div>
+                    <div id="hurrevac-img" class="project-img"></div>
+                    <div class="project-tags-widget">
+                        <div class="project-tags-label">Tools</div>
+                        <div class="project-tags">
+                            <ul>
+                                <li class="dev language">Python</li>
+                                <li class="dev tool">Flask</li>
+                                <li class="dev language">JavaScript</li>
+                                <li class="dev tool">JQuery</li>
+                                <li class="dev tool">MongoDB</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="projectpink.html">
+                <div id="projectpink" class="project">
+                    <div class="project-desc">
+                        <h3>Project Pink</h3>
+                        <p>Crowdsourcing information to help vulnerable women find free menstrual products.</p>
+                    </div>
+                    <div id="projectpink-img" class="project-img"></div>
+                    <div class="project-tags-widget">
+                        <div class="project-tags-label">Tools</div>
+                        <div class="project-tags">
+                            <ul>
+                                <li class="dev language">JavaScript</li>
+                                <li class="dev tool">JQuery</li>
+                                <li class="dev language">HTML</li>
+                                <li class="dev language">CSS</li>
+                                <li class="dev tool">Google Maps API</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="deathclock.html">
+                <div id="deathclock" class="project">
+                    <div class="project-desc">
+                        <h3>Death Clock</h3>
+                        <p>Counting down to a user's predicted date of death.</p>
+                    </div>
+                    <div id="deathclock-img" class="project-img"></div>
+                    <div class="project-tags-widget">
+                        <div class="project-tags-label">Tools</div>
+                        <div class="project-tags">
+                            <ul>
+                                <li class="dev language">JavaScript</li>
+                                <li class="dev language">HTML</li>
+                                <li class="dev language">CSS</li>
+                                <li class="dev tool">Google Chrome API</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </section>
+
     </main>
+
+    <div id="footer-placeholder"></div>
 
 </body>
 
-</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
 
+</html>
