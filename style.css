@@ -192,23 +192,27 @@ nav ul {
     background-color: rgb(238, 141, 106);
 }
 
+.project-desc-wrapper {
+    position: relative;
+    text-align: center;
+}
+
 .project-desc {
     position: relative;
     text-align: center;
-    margin: 4em 0;
-    width: 100%;
+    width: 75%;
+    margin: auto;
+    max-width: 24em;
 }
 
 .project-desc h3 {
     color: white;
     font-size: 3em;
-    margin: 0 2em;
 }
 
 .project-desc p {
     color: white;
     margin: 2em auto;
-    max-width: 24em;
 }
 
 .project-tags-widget {
@@ -356,6 +360,10 @@ footer h4 {
 
 @media only screen and (max-width: 480px) {
 
+    h1 {
+        font-size: 3em;
+    }
+
     /* DROPDOWN NAV */
 
     .nav-items {
@@ -394,5 +402,13 @@ footer h4 {
 
     .project-tags-widget {
         display: none;
+    }
+
+    /* FOOTER */
+
+    .social a {
+        color: black;
+        margin-left: .4em;
+        margin-right: .4em;
     }
 }
