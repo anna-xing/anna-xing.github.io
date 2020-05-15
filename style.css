@@ -353,6 +353,10 @@ footer h4 {
         margin: 0;
         box-shadow: inset 0 6px 10px 0 rgba(0, 0, 0, 0.4);
     }
+
+    .project-tags-widget {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 480px) {
