@@ -1,5 +1,9 @@
 /* GENERAL */
 
+.temp-container {
+    margin: 0 2em;
+}
+
 body {
     background-color: white;
     font-family: 'DM Sans', sans-serif;
@@ -368,37 +372,16 @@ footer h4 {
         padding: 2em;
     }
 
-    /* DROPDOWN NAV */
-
-    .nav-items {
-        display: none;
-    }
-
-    .nav-btn {
-        float: right;
-        display: block;
-    }
-
-    .dropdown .nav-btn {
-        position: absolute;
-        top: 16px;
-        right: 16px;
-    }
-
-    .dropdown {
-        position: relative;
-    }
-
-    .dropdown .nav-items {
-        position: absolute;
-        top: 2em;
-        right: 0;
-        display: block;
-        width: 6em;
-        text-align: right;
+    .banner {
+        padding: 6em 0 0;
+        margin: 0 2em;
     }
 
     /* PROJECTS */
+
+    #projects.container {
+        padding: 0 0 1em;
+    }
 
     .project {
         box-shadow: none;
