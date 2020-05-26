@@ -341,15 +341,12 @@ footer h4 {
 
     #projects.container {
         padding: 1em 0;
+        align-items: center;
     }
 
     .project {
-        border-radius: 0;
-    }
-
-    .project {
-        width: 100%;
-        margin: 0;
+        width: 90%;
+        margin: 2em auto;
     }
 }
 
@@ -360,7 +357,7 @@ footer h4 {
     }
 
     .container {
-        padding: 2em;
+        padding: 2em 1.5em;
     }
 
     .banner {
@@ -372,10 +369,6 @@ footer h4 {
 
     #projects.container {
         padding: 0 0 1em;
-    }
-
-    .project {
-        box-shadow: none;
     }
 
     .project-tags-widget {
