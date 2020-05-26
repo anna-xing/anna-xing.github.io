@@ -22,14 +22,11 @@ projectTagsWidgets.forEach(function (widget) {
 window.onload = function () {
     $("#nav-projects").removeClass("active");
     $("#nav-about").removeClass("active");
-    $("nav-oddsends").removeClass("active");
 
     let path = window.location.pathname;
 
     if (path === "/about.html") {
         $("#nav-about").addClass("active");
-    } else if (path === "/oddsends.html") {
-        $("#nav-oddsends").addClass("active");
     } else {
         $("#nav-projects").addClass("active");
     }

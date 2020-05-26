@@ -32,13 +32,10 @@ h1 {
     font-weight: 700;
 }
 
-p {
-    font-size: 1em;
-}
-
-hr {
-    width: 50%;
-    margin-top: 3em;
+p, li {
+    font-size: 13pt;
+    color: rgb(59, 59, 59);
+    line-height: 1.5;
 }
 
 .container {
@@ -185,15 +182,7 @@ nav ul {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: inset -2px 4px 10px 0 rgba(0, 0, 0, 0.4);
-}
-
-#hurrevac, 
-#deathclock {
-    background-color: rgb(104, 155, 214);
-}
-
-#projectpink {
-    background-color: rgb(238, 141, 106);
+    background-color: rgb(238, 146, 113);
 }
 
 .project-desc-wrapper {
@@ -212,11 +201,13 @@ nav ul {
 .project-desc h3 {
     color: white;
     font-size: 3em;
+    margin: 2em auto 0.5em;
 }
 
 .project-desc p {
     color: white;
-    margin: 2em auto;
+    margin: auto;
+    font-weight: 400;
 }
 
 .project-tags-widget {
