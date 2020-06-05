@@ -32,9 +32,14 @@ h1 {
     font-weight: 700;
 }
 
+h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
 p, li {
     font-size: 13pt;
-    color: rgb(59, 59, 59);
+    color: rgb(0, 0, 0);
     line-height: 1.5;
 }
 
@@ -51,11 +56,6 @@ p, li {
     text-align: left;
     width: 100%;
     margin-bottom: 1em;
-}
-
-.heading h2 {
-    font-size: 2em;
-    font-weight: 700;
 }
 
 /* ANIMATIONS */
@@ -120,7 +120,6 @@ p, li {
 nav {
     width: 100%;
     position: fixed;
-    background-color: white;
     z-index: 2;
 }
 
@@ -133,7 +132,6 @@ nav ul {
     list-style-type: none;
     padding: 1em 1em 1em 2em;
     margin: 0;
-    background-color: white;
     overflow: auto;
 }
 
@@ -166,6 +164,134 @@ nav ul {
     opacity: 100%;
 }
 
+.link-span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* CARDS */
+
+.card-group {
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.col-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 26em;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin: 1em 0;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+    transition: top .3s ease-in-out;
+}
+
+.card:hover {
+    top: -10px;
+}
+
+.card h3 {
+    margin: 2em;
+}
+
+.card-info {
+    z-index: 1;
+    background-color: white;
+    position: absolute;
+    text-align: left;
+    top: -2em;
+    width: 80%;
+    left: 10%;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* WRITING */
+/* ART*/
+
+.divider {
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    margin: 4em 0;
+    padding: 1em 0;
+}
+
+#writing,
+#art {
+    width: 70%;
+    max-width: 54em;
+    margin: 3em auto;
+    text-align: left;
+}
+
+#writing .card,
+#art .card {
+    height: 16em;
+    width: 48%;
+    background-size: cover;
+}
+
+#commengagement {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("about/commengagement.jpg");
+    background-position: top;
+}
+
+#q11 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("about/q11.jpg");
+}
+
+#majortom {
+    background-image: url("about/MajorTom.jpg");
+    background-position: center;
+}
+
+#fishing {
+    background-image: url("about/Fishing.png");
+    background-position: center;
+}
+
+#skeletoncloset {
+    background-image: url("about/SkeletonInCloset-noRainbow.jpg");
+    background-position: center;
+}
+
+#thedinner {
+    background-image: url("about/thedinner.jpg");
+    background-position: center;
+}
+
+#torschlusspanik {
+    background-image: url("about/torschlusspanik.jpg");
+    background-position: center;
+}
+
+#mothertongue {
+    background-image: url("about/MotherTongue.jpg");
+    background-position: center;
+}
+
+#stilllife {
+    background-image: url("about/StillLife.JPG");
+    background-position: bottom;
+}
+
+#baroque {
+    background-image: url("about/Baroque.JPG");
+}
+
+
 /* PROJECTS */
 
 #projects {
@@ -181,7 +307,7 @@ nav ul {
     margin: 2em 0;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: inset -2px 4px 10px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: inset -2px 4px 10px 0 rgba(0, 0, 0, 0.1);
     background-color: rgb(238, 146, 113);
 }
 
@@ -216,7 +342,7 @@ nav ul {
     right: 0;
     bottom: 2em;
     border-radius: 5px 0 0 5px;
-    box-shadow: -2px 4px 10px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: -2px 4px 10px 0 rgba(0, 0, 0, 0.1);
     padding-left: 2em;
     width: 10em;
     transform: translateX(10em);
@@ -270,28 +396,30 @@ nav ul {
 
 /* FOOTER */
 
+footer.divider {
+    margin: 2em 0 0;
+    padding: 4em 0 2em;
+}
+
 .social {
     font-size: 20px;
     text-align: center;
+    margin-bottom: 2em;
 }
 
 .social a {
     color: black;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 0 1em;
 }
 
 footer {
-    margin: 2em;
+    margin: 2em auto;
     display: inline-block;    
     text-align: center;
 }
 
-footer h4 {
-    padding-top: 1em;
-    color: black;
-    font-weight: 400;
-    font-size: 10px;
+footer p {
+    font-size: 10pt;
 }
 
 /* ABOUT */
@@ -309,7 +437,7 @@ footer h4 {
     margin: 2em auto;
     padding: 0;
     border-radius: 10px;
-    box-shadow: inset -2px 4px 10px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: inset -2px 4px 10px 0 rgba(0, 0, 0, 0.1);
     object-fit: cover;
 }
 
@@ -337,6 +465,15 @@ footer h4 {
         text-align: center;
     }
 
+    /* WRITING */
+    /* ART */
+
+    #writing .card,
+    #art .card {
+        width: 100%;
+        height: 16em;
+    }
+
     /* PROJECTS */
 
     #projects.container {
@@ -347,6 +484,12 @@ footer h4 {
     .project {
         width: 90%;
         margin: 2em auto;
+    }
+
+    /* NAV */
+
+    nav {
+        background-color: white;
     }
 }
 
