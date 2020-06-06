@@ -196,16 +196,13 @@ nav ul {
     background-color: white;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
     top: 0;
-    transition: top .3s ease-in-out;
+    transition: top .3s ease-in-out, box-shadow .3s ease-in-out;
+    overflow: hidden;
 }
 
 .card:hover {
     top: -10px;
-}
-
-.card h3,
-.card p {
-    margin: 2em;
+    box-shadow: 0 5px 15px 3px rgba(0, 0, 0, 0.3);
 }
 
 .card-info {
@@ -213,11 +210,21 @@ nav ul {
     background-color: white;
     position: absolute;
     text-align: left;
-    top: -2em;
-    width: 80%;
-    left: 10%;
-    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    padding: 3em;
+}
+
+.card-info h3 {
+    margin: 0;
+}
+
+/* PROJECTS */
+
+#projects .card-info h3 {
+    font-size: 3em;
 }
 
 /* WRITING */
@@ -246,12 +253,13 @@ nav ul {
 }
 
 #commengagement {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("about/commengagement.jpg");
+    background: url("about/commengagement.jpg");
     background-position: top;
 }
 
 #q11 {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("about/q11.jpg");
+    background: url("about/q11.jpg");
+    background-position: center;
 }
 
 #majortom {
@@ -481,6 +489,15 @@ footer p {
     }
 
     /* PROJECTS */
+
+    #projects .card {
+        width: 90%;
+        margin: auto;
+    }
+
+    #projects .card h3 {
+        font-size: 2.5em;
+    }
 
     #projects.container {
         padding: 1em 0;
