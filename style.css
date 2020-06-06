@@ -177,12 +177,12 @@ nav ul {
 
 .card-group {
     width: 100%;
-    justify-content: space-between;
     position: relative;
 }
 
 .col-2 {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -195,6 +195,7 @@ nav ul {
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+    top: 0;
     transition: top .3s ease-in-out;
 }
 
@@ -202,7 +203,8 @@ nav ul {
     top: -10px;
 }
 
-.card h3 {
+.card h3,
+.card p {
     margin: 2em;
 }
 
