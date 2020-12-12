@@ -309,8 +309,12 @@ nav ul {
     background-size: cover;
 }
 
+#collin-county {
+    background: url("about/collin-county.jpg");
+}
+
 #comm-engagement {
-    background: url("about/commengagement.jpg");
+    background: url("about/comm-engagement.jpg");
     background-position: top;
 }
 
