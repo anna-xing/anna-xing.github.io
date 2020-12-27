@@ -264,6 +264,12 @@ nav ul {
     margin-bottom: 3em;
 }
 
+#tickerlookup {
+    background-image: url("tickerlookup/Popup.png");
+    background-size: 50%;
+    background-position: right;
+}
+
 #bitwheel {
     background-image: url("bitwheel/LandingPg.jpg");
     background-size: cover;
