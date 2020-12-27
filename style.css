@@ -201,7 +201,7 @@ nav ul {
     transition: top .3s ease-in-out, box-shadow .3s ease-in-out;
     display: block;
     overflow: hidden;
-    background-color: coral;
+    background-color: rgb(197, 197, 197);
 }
 
 .card:hover {
@@ -218,7 +218,7 @@ nav ul {
     width: 40%;
     height: 100%;
     border-radius: 0 10px 10px 0;
-    padding: 2.5em 3em;
+    padding: 2em 3em;
 }
 
 .card-info h3 {
@@ -313,6 +313,11 @@ nav ul {
     min-height: 16em;
     width: 48%;
     background-size: cover;
+}
+
+#big-tech-illustration {
+    background: url("about/big-tech-illustration.jpeg");
+    background-position: right;
 }
 
 #collin-county {
