@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export const NAV_HEIGHT = '2rem';
 
 const NavTitle = styled.h1`
-    font-size: ${(props) => props.theme.fontSize.medium}rem;
+    font-size: ${(props) => props.theme.fontSize.small};
     margin: 0;
     line-height: 0;
 
@@ -26,8 +26,18 @@ const NavItem = styled.li`
 const StyledLink = styled(Link)`
     text-decoration: none;
     color: ${(props) => props.theme.color.textPrimary};
-    font-size: ${(props) => props.theme.fontSize.medium}rem;
+    font-size: ${(props) => props.theme.fontSize.small};
     
+    &:hover {
+        color: ${(props) => props.theme.color.textAccent};
+    }
+`;
+
+const StyledA = styled.a`
+    text-decoration: none;
+    color: ${(props) => props.theme.color.textPrimary};
+    font-size: ${(props) => props.theme.fontSize.small};
+
     &:hover {
         color: ${(props) => props.theme.color.textAccent};
     }
@@ -40,12 +50,13 @@ const LinkContainer = styled.ul`
     list-style-type: none;
 `;
 
+// TODO: turn width into max-width for smaller screens
 const NavBar = styled.nav`
     position: fixed;
     top: 0;
     z-index: ${(props) => props.theme.fontFamily.nav};
-    width: calc(${(props) => props.theme.maxWidth.page}px
-        + ${(props) => props.theme.padding.pageHorizontal}px);
+    width: calc(${(props) => props.theme.maxWidth.page}
+        + ${(props) => props.theme.padding.pageHorizontal});
     height: ${NAV_HEIGHT};
     font-family: ${(props) => props.theme.fontFamily.body};
     display: flex;
@@ -72,9 +83,9 @@ export const Nav = () => {
                     <StyledLink to='/about'>About</StyledLink>
                 </NavItem>
                 <NavItem>
-                    <StyledLink to='https://drive.google.com/file/d/1ZqcecURszhB7Q_R0ZfTt-0tmJ1LMavxU/view'>
+                    <StyledA href='https://drive.google.com/file/d/1ZqcecURszhB7Q_R0ZfTt-0tmJ1LMavxU/view' target='_blank'>
                         Resume
-                    </StyledLink>
+                    </StyledA>
                 </NavItem>
             </LinkContainer>
         </NavBar>
