@@ -2,17 +2,16 @@ import { sharedConstants } from './shared';
 
 export const lightTheme = {
     color: {
-        backgroundPrimary: '#f7f7f7',
-        backgroundSecondary: '#d1d1d1',
-
-        outline: '#999999',
+        backgroundPrimary: '#f4f4f4',
+        backgroundSecondary: '#d9d9d9',
 
         textPrimary: '#1f1f1f',
-        textSecondary: '#8c8c8c',
+        textSecondary: '#757575',
         textAccent: '#ff713d',
     },
     boxShadow: {
-        hover: '0px 5px 15px 0px rgba(0,0,0,0.3)',
+        card: '0px 5px 20px 0px rgba(0,0,0,0.8)',
     },
+    outline: '3px solid #1f1f1f',
     ...sharedConstants,
 };

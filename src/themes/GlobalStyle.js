@@ -30,4 +30,8 @@ export const GlobalStyle = createGlobalStyle`
         text-align: center;
         background-color: ${(props) => props.theme.color.backgroundPrimary};
     }
+
+    a {
+        text-decoration: none;
+    }
 `
