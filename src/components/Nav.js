@@ -55,9 +55,9 @@ const LinkContainer = styled.ul`
 
 // TODO: turn width into max-width for smaller screens
 const NavBar = styled.nav`
-    position: absolute;
+    position: fixed;
     top: 0;
-    z-index: ${(props) => props.theme.fontFamily.nav};
+    z-index: ${(props) => props.theme.zIndex.nav};
     width: calc(100% - ${({theme}) => theme.padding.pageHorizontal} * 2);
     max-width: calc(${({theme}) => theme.maxWidth.page}
         + ${({theme}) => theme.padding.pageHorizontal});

@@ -7,7 +7,6 @@ import {
     TagText,
     Tag,
     TagContainer,
-
     CardContainer,
     TextCard,
     ImgCard,

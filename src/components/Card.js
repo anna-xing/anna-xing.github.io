@@ -7,11 +7,18 @@ export const CardContainer = styled.div`
     display: flex;
     box-shadow: none;
     transition: ${({theme}) => theme.transition.boxShadow};
+    outline: ${({theme}) => theme.outline.card + ' ' + theme.color.outline};
+    margin-bottom: calc(${({theme}) => theme.padding.pageVertical} * 2);
 
     &:hover {
-        box-shadow: ${({theme}) => theme.boxShadow.card};
+        box-shadow: ${({theme}) => theme.boxShadow.card + ' ' + theme.color.cardBoxShadow};
     }
 `;
+
+// Props: height
+export const SingleCardContainer = styled(CardContainer)`
+    width: auto;
+`; // TODO: not working ;_;
 
 export const TextCard = styled.div`
     z-index: ${({theme}) => theme.zIndex.overlay};
@@ -22,7 +29,6 @@ export const TextCard = styled.div`
         ${({theme}) => theme.padding.pageHorizontal} 
         calc(${({theme}) => theme.padding.pageVertical} * 2);
     text-align: left;
-    outline: ${({theme}) => theme.outline};
 `;
 
 // Props: bgImg
@@ -36,7 +42,7 @@ export const ImgCard = styled.div`
     background-color: ${({theme}) => theme.color.backgroundSecondary};
     background-size: cover;
     background-position: center;
-    outline: ${({theme}) => theme.outline};
+    outline: ${({theme}) => theme.outline.card + ' ' + theme.color.outline};
 `;
 
 export const CardsGrid = styled.div`

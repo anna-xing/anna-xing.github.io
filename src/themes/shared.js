@@ -28,13 +28,17 @@ export const sharedConstants = {
     },
     cardSize: {
         projectHeight: '300px',
-        writingWidth: '340px',
         writingHeight: '300px',
-        artWidth: '340px',
         artHeight: '340px',
     },
     transition: {
         color: 'color 300ms',
         boxShadow: 'box-shadow 300ms ease-in-out',
+    },
+    boxShadow: {
+        card: '0px 5px 20px 5px',
+    },
+    outline: {
+        card: '6px solid'
     },
 };

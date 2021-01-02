@@ -20,10 +20,10 @@ export default function App() {
               <AboutPage />
             </Route>
             <Route path="/play">
-              <PlayPage />
+              <PlayPage theme={theme} />
             </Route>
             <Route path="/">
-              <WorkPage theme={theme}/>
+              <WorkPage theme={theme} />
             </Route>
           </Switch>
         </PageContainer>
