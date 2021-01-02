@@ -7,7 +7,11 @@ export const CardContainer = styled.div`
     display: flex;
     box-shadow: none;
     transition: ${({theme}) => theme.transition.boxShadow};
-    outline: ${({theme}) => theme.outline.card + ' ' + theme.color.outline};
+    outline: ${({theme}) => [
+        theme.outlineWidth.card,
+        theme.outlineType.card,
+        theme.color.outline
+    ].join(' ')};
     margin-bottom: calc(${({theme}) => theme.padding.pageVertical} * 2);
 
     &:hover {
@@ -17,7 +21,8 @@ export const CardContainer = styled.div`
 
 // Props: height
 export const SingleCardContainer = styled(CardContainer)`
-    width: auto;
+    width: ${({theme}) => theme.cardSize.writingWidth};
+    margin-right: ${({theme}) => theme.padding.pageHorizontal};
 `; // TODO: not working ;_;
 
 export const TextCard = styled.div`
@@ -31,6 +36,11 @@ export const TextCard = styled.div`
     text-align: left;
 `;
 
+export const SingleTextCard = styled(TextCard)`
+    width: 100%;
+    min-height: fit-content;
+`;
+
 // Props: bgImg
 export const ImgCard = styled.div`
     zIndex: 0;
@@ -42,10 +52,20 @@ export const ImgCard = styled.div`
     background-color: ${({theme}) => theme.color.backgroundSecondary};
     background-size: cover;
     background-position: center;
-    outline: ${({theme}) => theme.outline.card + ' ' + theme.color.outline};
+    outline: ${({theme}) => [
+        theme.outlineWidth.card, 
+        theme.outlineType.card, 
+        theme.color.outline
+    ].join(' ')};
 `;
 
 export const CardsGrid = styled.div`
     margin: 0;
     padding: ${({theme}) => theme.padding.pageVertical} 0;
+    text-align: center;
+`;
+
+export const SingleCardsGrid = styled(CardsGrid)`
+    display: flex;
+    max-width: 100%;
 `;

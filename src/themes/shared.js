@@ -28,7 +28,8 @@ export const sharedConstants = {
     },
     cardSize: {
         projectHeight: '300px',
-        writingHeight: '300px',
+        writingHeight: '348px',
+        writingWidth: '394px',
         artHeight: '340px',
     },
     transition: {
@@ -38,7 +39,10 @@ export const sharedConstants = {
     boxShadow: {
         card: '0px 5px 20px 5px',
     },
-    outline: {
-        card: '6px solid'
+    outlineWidth: {
+        card: '6px'
     },
+    outlineType: {
+        card: 'solid'
+    }
 };
