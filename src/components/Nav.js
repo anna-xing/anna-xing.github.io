@@ -5,16 +5,17 @@ import { Link, useLocation } from 'react-router-dom';
 export const NAV_HEIGHT = '2rem';
 
 const NavTitle = styled.h1`
-    font-size: ${(props) => props.theme.fontSize.small};
+    font-size: ${({theme}) => theme.fontSize.small};
     margin: 0;
     line-height: 0;
 
     & > a {
-        color: ${(props) => props.theme.color.textPrimary};
+        color: ${({theme}) => theme.color.textPrimary};
         text-decoration: none;
     }
     & > a:hover {
-        color: ${(props) => props.theme.color.textAccent};
+        color: ${({theme}) => theme.color.textAccent};
+        transition: ${({theme}) => theme.transition.color};
     }
 `; // TODO: change color transition to a letter jumping thing
 
@@ -37,11 +38,11 @@ const StyledLink = styled(Link)`
 
 const StyledA = styled.a`
     text-decoration: none;
-    color: ${(props) => props.theme.color.textSecondary};
-    font-size: ${(props) => props.theme.fontSize.small};
+    color: ${({theme}) => theme.color.textSecondary};
+    font-size: ${({theme}) => theme.fontSize.small};
 
     &:hover {
-        color: ${(props) => props.theme.color.textPrimary};
+        color: ${({theme}) => theme.color.textPrimary};
         transition: ${({theme}) => theme.transition.color};
     }
 `;
@@ -57,12 +58,12 @@ const LinkContainer = styled.ul`
 const NavBar = styled.nav`
     position: fixed;
     top: 0;
-    z-index: ${(props) => props.theme.zIndex.nav};
+    z-index: ${({theme}) => theme.zIndex.nav};
     width: calc(100% - ${({theme}) => theme.padding.pageHorizontal} * 2);
     max-width: calc(${({theme}) => theme.maxWidth.page}
         + ${({theme}) => theme.padding.pageHorizontal});
     height: ${NAV_HEIGHT};
-    font-family: ${(props) => props.theme.fontFamily.body};
+    font-family: ${({theme}) => theme.fontFamily.body};
     display: flex;
     align-items: center;
     justify-content: space-between;

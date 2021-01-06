@@ -17,13 +17,14 @@ export const AboutPage = ({theme}) => {
             </BannerContainer>
             <TextContainer>
                 <BodyText>
-                    I'm a second-year Computer Science student at the University of Waterloo. 
+                    I'm a second-year BCS student at the University of Waterloo. 
                     This past fall, I was a Web Developer for UW's Computer Science Computing Facility,
-                    where I worked on university-wide applications for faculty and student support. I'm
-                    currently seeking opportunities for Spring 2021.
+                    where I worked on applications supporting faculty and students. 
+                    I'm currently seeking opportunities for Spring 2021.
                 </BodyText>
                 <BodyText>
-                    I'm passionate about human-centered design! I love applying interdisciplinary 
+                    I'm passionate about human-centered design, which is why I'm pursuing a Human-Computer 
+                    Interaction specialization within my degree. I love applying interdisciplinary 
                     knowledge to build products with the potential to do social good.
                 </BodyText>
                 <BodyText>
