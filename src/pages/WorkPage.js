@@ -30,7 +30,7 @@ export const WorkPage = ({theme}) => {
             <a href="https://github.com/anna-xing/ticker-extension" target="_blank" rel="noopener noreferrer">
                 <CardContainer height={theme.cardSize.projectHeight}>
                     <TextCard>
-                        <HeadingText>Ticker Extension</HeadingText>
+                        <HeadingText>Stock Ticker Lookup</HeadingText>
                         <BodyText>Chrome extension providing quick access to stock information.</BodyText>
                         <TagContainer>
                             <Tag><TagText>Javascript</TagText></Tag>
