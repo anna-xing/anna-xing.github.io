@@ -3,11 +3,11 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
 import { GlobalStyle, lightTheme, darkTheme } from "./themes";
-import { Nav, PageContainer } from "./components";
+import { Nav, PageContainer, Footer } from "./components";
 import { AboutPage, PlayPage, WorkPage } from "./pages";
 
 export default function App() {
-  let theme = lightTheme;
+  let theme = darkTheme;
 
   return (
     <ThemeProvider theme={theme}>
@@ -17,7 +17,7 @@ export default function App() {
           <Nav />
           <Switch>
             <Route path="/about">
-              <AboutPage />
+              <AboutPage theme={theme} />
             </Route>
             <Route path="/play">
               <PlayPage theme={theme} />
@@ -26,6 +26,7 @@ export default function App() {
               <WorkPage theme={theme} />
             </Route>
           </Switch>
+          <Footer />
         </PageContainer>
       </BrowserRouter>
     </ThemeProvider>

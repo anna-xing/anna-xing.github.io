@@ -35,6 +35,7 @@ export const sharedConstants = {
     transition: {
         color: 'color 300ms',
         boxShadow: 'box-shadow 300ms ease-in-out',
+        typical: 2000,
     },
     boxShadow: {
         card: '0px 5px 20px 5px',
@@ -44,5 +45,5 @@ export const sharedConstants = {
     },
     outlineType: {
         card: 'solid'
-    }
+    },
 };

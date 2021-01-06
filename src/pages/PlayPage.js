@@ -7,18 +7,11 @@ import {
     TagContainer,
     TagText,
     Tag,
-    CardContainer, // Maybe remove
     SingleCardContainer, 
-    ImgCard,
-    TextCard,
     SingleTextCard,
-    CardsGrid,
     SingleCardsGrid,
     BannerContainer,
 } from './../components';
-
-import bigTechIllustImg from './../assets/img/writing/big-tech-illustration.jpeg';
-import collinCountyImg from './../assets/img/writing/collin-county.jpg';
 
 export const PlayPage = ({theme}) => {
     return (
