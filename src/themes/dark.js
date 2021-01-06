@@ -7,7 +7,7 @@ export const darkTheme = {
 
         textPrimary: '#ededed',
         textSecondary: '#b0b0b0',
-        textAccent: '#ff713d',
+        textAccent: '#f79b1b',
 
         cardBoxShadow: 'rgba(200,200,200,0.8)',
         outline: '#ededed',
