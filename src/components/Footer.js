@@ -13,7 +13,7 @@ const FooterText = styled.p`
     font-family: ${({theme}) => theme.fontFamily.body};
     font-size: ${({theme}) => theme.fontSize.xs};
     font-weight: normal;
-    color: ${({theme}) => theme.color.textSecondary};
+    color: ${({theme}) => theme.color.textPrimary};
 `;
 
 const FooterContainer = styled.footer`
@@ -24,16 +24,29 @@ const FooterContainer = styled.footer`
 const StyledIcon = styled(FontAwesomeIcon)`
     margin: 0 12px;
     color: ${({theme}) => theme.color.textPrimary};
+
+    &:hover {
+        color: ${({theme}) => theme.color.textAccent};
+        transition: ${({theme}) => theme.transition.color};
+    }
 `;
 
 export const Footer = () => {
     return (
         <FooterContainer>
             <IconContainer>
-                <StyledIcon icon={faLinkedinIn} size='lg' />
-                <StyledIcon icon={faGithub} size='lg' />
-                <StyledIcon icon={faMediumM} size='lg' />
-                <StyledIcon icon={faEnvelope} size='lg' />
+                <a href="https://www.linkedin.com/in/anna-xing/" target="_blank" rel="noreferrer noopener">
+                    <StyledIcon icon={faLinkedinIn} size='lg' />
+                </a>
+                <a href="https://github.com/anna-xing" target="_blank" rel="noreferrer noopener">
+                    <StyledIcon icon={faGithub} size='lg' />
+                </a>
+                <a href="https://anna-xing.medium.com/" target="_blank" rel="noreferrer noopener">
+                    <StyledIcon icon={faMediumM} size='lg' />
+                </a>
+                <a href="mailto:anna.xing@uwaterloo.ca">
+                    <StyledIcon icon={faEnvelope} size='lg' />
+                </a>
             </IconContainer>
             <FooterText>Made with <FontAwesomeIcon icon={faHeart} /> by Anna Xing</FooterText>
         </FooterContainer>
