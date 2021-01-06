@@ -5,8 +5,8 @@ export const lightTheme = {
         backgroundPrimary: '#f6f6f6',
         backgroundSecondary: '#d9d9d9',
 
-        textPrimary: '#1f1f1f',
-        textSecondary: '#757575',
+        textPrimary: 'rgb(31,31,31)',
+        textSecondary: 'rgba(31,31,31,0.5)',
         textAccent: '#ff713d',
 
         cardBoxShadow: 'rgba(0,0,0,0.8)',
