@@ -5,7 +5,7 @@ export const darkTheme = {
         backgroundPrimary: '#1f1f1f',
         backgroundSecondary: '#525252',
 
-        textPrimary: '#ededed',
+        textPrimary: '#f6f6f6',
         textSecondary: '#b0b0b0',
 
         cardBoxShadow: 'rgba(200,200,200,0.8)',

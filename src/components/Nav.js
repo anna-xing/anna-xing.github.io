@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Link, useLocation } from 'react-router-dom';
 
 import { bounceWrapper, colourChangeWrapper } from './util';
+import { ThemeToggle } from './ThemeToggle';
 
 export const NAV_HEIGHT = '2rem';
 
@@ -39,6 +40,7 @@ const LinkContainer = styled.ul`
     display: float;
     right: 0;
     padding: 0 0 0 28px;
+    margin: 0;
     list-style-type: none;
 `;
 
@@ -52,12 +54,12 @@ const NavBar = styled.nav`
     height: ${NAV_HEIGHT};
     font-family: ${({theme}) => theme.fontFamily.body};
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 8px 0;
+    margin: 24px 0;
 `;
 
-export const Nav = () => {
+export const Nav = ({themeType, toggleThemeType}) => {
     const location = useLocation();
     return (
         <NavBar>
@@ -79,6 +81,7 @@ export const Nav = () => {
                         Resume
                     </StyledA>
                 </NavItem>
+                <ThemeToggle themeType={themeType} toggleThemeType={toggleThemeType} />
             </LinkContainer>
         </NavBar>
     );
