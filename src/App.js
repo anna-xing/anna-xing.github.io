@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={currTheme}>
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <GlobalStyle />
         <PageContainer>
           <Nav themeType={themeType} toggleThemeType={toggleThemeType} />
