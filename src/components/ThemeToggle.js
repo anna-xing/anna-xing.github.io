@@ -28,13 +28,25 @@ const ToggleContainer = styled.button`
     &:focus {
         outline: none;
     }
+
+    svg {
+        transition: ${({theme}) => theme.transition.all};
+
+        &:first-child {
+            transform: ${({isLightTheme}) => isLightTheme ? 'translateY(0)' : 'translateY(100px)'};
+        }
+
+        &:nth-child(2) {
+            transform: ${({isLightTheme}) => isLightTheme ? 'translateY(-100px)' : 'translateY(0)'};
+        }
+    }
 `;
 
-export const ThemeToggle = ({themeType, toggleThemeType}) => {
+export const ThemeToggle = ({theme, themeType, toggleThemeType}) => {
     return (
         <ToggleContainer isLightTheme={themeType === 'light'} onClick={toggleThemeType}>
-            <FontAwesomeIcon icon={faCircle} color={lightTheme.color.textPrimary} />
-            <FontAwesomeIcon icon={faMoon} color={darkTheme.color.textPrimary} />
+            <FontAwesomeIcon icon={faCircle} color={lightTheme.color.themeIcon} />
+            <FontAwesomeIcon icon={faMoon} color={darkTheme.color.themeIcon} />
         </ToggleContainer>
     );
 };

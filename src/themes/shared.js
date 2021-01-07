@@ -36,6 +36,7 @@ export const sharedConstants = {
         color: 'color 200ms',
         translateY: 'transform 200ms ease-in-out',
         typical: 2000,
+        all: 'all 300ms linear',
     },
     transform: {
         translateY: 'translateY(-6px)',

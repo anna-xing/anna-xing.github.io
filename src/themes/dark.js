@@ -10,6 +10,7 @@ export const darkTheme = {
 
         cardBoxShadow: 'rgba(200,200,200,0.8)',
         outline: '#ededed',
+        themeIcon: '#fff78f',
     },
     ...sharedConstants,
 };

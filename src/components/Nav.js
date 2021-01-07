@@ -59,7 +59,7 @@ const NavBar = styled.nav`
     margin: 24px 0;
 `;
 
-export const Nav = ({themeType, toggleThemeType}) => {
+export const Nav = ({theme, themeType, toggleThemeType}) => {
     const location = useLocation();
     return (
         <NavBar>
@@ -81,7 +81,7 @@ export const Nav = ({themeType, toggleThemeType}) => {
                         Resume
                     </StyledA>
                 </NavItem>
-                <ThemeToggle themeType={themeType} toggleThemeType={toggleThemeType} />
+                <ThemeToggle theme={theme} themeType={themeType} toggleThemeType={toggleThemeType} />
             </LinkContainer>
         </NavBar>
     );

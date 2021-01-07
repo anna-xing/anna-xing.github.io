@@ -15,7 +15,7 @@ export default function App() {
       <BrowserRouter basename="/">
         <GlobalStyle />
         <PageContainer>
-          <Nav themeType={themeType} toggleThemeType={toggleThemeType} />
+          <Nav theme={currTheme} themeType={themeType} toggleThemeType={toggleThemeType} />
           <Switch>
             <Route path="/about">
               <AboutPage theme={currTheme} />

@@ -2,7 +2,7 @@ import { sharedConstants } from './shared';
 
 export const lightTheme = {
     color: {
-        backgroundPrimary: '#f6f6f6',
+        backgroundPrimary: '#ffffff',//'#f6f6f6',
         backgroundSecondary: '#d9d9d9',
 
         textPrimary: 'rgb(31,31,31)',
@@ -10,6 +10,7 @@ export const lightTheme = {
 
         cardBoxShadow: 'rgba(0,0,0,0.8)',
         outline: '#1f1f1f',
+        themeIcon: '#f7c600',
     },
     ...sharedConstants,
 };
