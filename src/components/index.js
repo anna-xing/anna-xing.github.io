@@ -8,3 +8,4 @@ export * from './BannerContainer';
 export * from './TextContainer';
 export * from './TextLink';
 export * from './Footer';
+export * from './ThemeToggle';

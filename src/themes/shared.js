@@ -41,9 +41,11 @@ export const sharedConstants = {
         translateY: 'translateY(-6px)',
     },
     outlineWidth: {
-        card: '6px'
+        card: '6px',
+        button: '4px',
     },
     outlineType: {
-        card: 'solid'
+        card: 'solid',
+        button: 'solid',
     },
 };
