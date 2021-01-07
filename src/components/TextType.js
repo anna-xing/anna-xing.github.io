@@ -36,6 +36,16 @@ export const BodyText = styled.p`
     padding: 0;
 `;
 
+// To avoid nesting <p> elements
+export const BodyTextSpan = styled.span`
+    font-family: ${(props) => props.theme.fontFamily.body};
+    font-size: ${(props) => props.theme.fontSize.medium};
+    color: ${(props) => props.theme.color.textPrimary};
+    margin: ${({theme}) => theme.fontSize.small} 0;
+    padding: 0;
+    display: inline;
+`;
+
 export const TagText = styled.p`
     font-family: ${({theme}) => theme.fontFamily.tag};
     font-size: ${({theme}) => theme.fontSize.xs};

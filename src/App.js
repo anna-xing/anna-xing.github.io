@@ -7,7 +7,7 @@ import { Nav, PageContainer, Footer } from "./components";
 import { AboutPage, PlayPage, WorkPage } from "./pages";
 
 export default function App() {
-  let theme = darkTheme;
+  let theme = lightTheme;
 
   return (
     <ThemeProvider theme={theme}>

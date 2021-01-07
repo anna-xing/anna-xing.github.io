@@ -1,23 +1,20 @@
 import styled from 'styled-components';
 
+import { bounceWrapper } from './util';
+
 // Props: height
-export const CardContainer = styled.div`
+export const CardContainer = bounceWrapper(styled.div`
     min-height: ${({height}) => height};
     padding: 0;
     display: flex;
     box-shadow: none;
-    transition: ${({theme}) => theme.transition.boxShadow};
     outline: ${({theme}) => [
         theme.outlineWidth.card,
         theme.outlineType.card,
         theme.color.outline
     ].join(' ')};
     margin-bottom: calc(${({theme}) => theme.padding.pageVertical} * 2);
-
-    &:hover {
-        box-shadow: ${({theme}) => theme.boxShadow.card + ' ' + theme.color.cardBoxShadow};
-    }
-`;
+`);
 
 // Props: height
 export const SingleCardContainer = styled(CardContainer)`

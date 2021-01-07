@@ -7,6 +7,7 @@ import {
     BodyText,
     TextContainer,
     TextLink,
+    BodyTextSpan,
 } from './../components';
 
 export const AboutPage = ({theme}) => {
@@ -33,8 +34,8 @@ export const AboutPage = ({theme}) => {
                     <TextLink href="mailto:anna.xing@uwaterloo.ca"> anna.xing@uwaterloo.ca </TextLink>
                     or through any of my links below.
                 </BodyText>
-                <BodyText>
-                    When I'm not tinkering with dev tools, you can find me: 
+                <BodyTextSpan>
+                    When I'm not tinkering with dev tools, you can find me:
                     <Typical
                         steps={[
                             ' making art.', theme.transition.typical,
@@ -45,9 +46,9 @@ export const AboutPage = ({theme}) => {
                             ' running.', theme.transition.typical,
                         ]}
                         loop={Infinity}
-                        wrapper='BodyText'
+                        wrapper={BodyTextSpan}
                     />
-                </BodyText>
+                </BodyTextSpan>
             </TextContainer>
         </React.Fragment>
     );

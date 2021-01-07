@@ -33,12 +33,12 @@ export const sharedConstants = {
         artHeight: '340px',
     },
     transition: {
-        color: 'color 300ms',
-        boxShadow: 'box-shadow 300ms ease-in-out',
+        color: 'color 200ms',
+        translateY: 'transform 200ms ease-in-out',
         typical: 2000,
     },
-    boxShadow: {
-        card: '0px 5px 20px 5px',
+    transform: {
+        translateY: 'translateY(-6px)',
     },
     outlineWidth: {
         card: '6px'

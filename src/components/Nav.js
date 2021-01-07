@@ -2,9 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link, useLocation } from 'react-router-dom';
 
+import { bounceWrapper, colourChangeWrapper } from './util';
+
 export const NAV_HEIGHT = '2rem';
 
-const NavTitle = styled.h1`
+const NavTitle = bounceWrapper(styled.h1`
     font-size: ${({theme}) => theme.fontSize.small};
     margin: 0;
     line-height: 0;
@@ -13,39 +15,25 @@ const NavTitle = styled.h1`
         color: ${({theme}) => theme.color.textPrimary};
         text-decoration: none;
     }
-    & > a:hover {
-        color: ${({theme}) => theme.color.textAccent};
-        transition: ${({theme}) => theme.transition.color};
-    }
-`; // TODO: change color transition to a letter jumping thing
+`);
 
 const NavItem = styled.li`
     line-height: 0;
     margin: 0 0 0 16px;
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = colourChangeWrapper(styled(Link)`
     text-decoration: none;
     color: ${(props) => 
         props.active ? props.theme.color.textPrimary : props.theme.color.textSecondary};
     font-size: ${({theme}) => theme.fontSize.small};
-    
-    &:hover {
-        color: ${({theme}) => theme.color.textPrimary};
-        transition: ${({theme}) => theme.transition.color};
-    }
-`;
+`);
 
-const StyledA = styled.a`
+const StyledA = colourChangeWrapper(styled.a`
     text-decoration: none;
     color: ${({theme}) => theme.color.textSecondary};
     font-size: ${({theme}) => theme.fontSize.small};
-
-    &:hover {
-        color: ${({theme}) => theme.color.textPrimary};
-        transition: ${({theme}) => theme.transition.color};
-    }
-`;
+`);
 
 const LinkContainer = styled.ul`
     display: float;
@@ -54,7 +42,6 @@ const LinkContainer = styled.ul`
     list-style-type: none;
 `;
 
-// TODO: turn width into max-width for smaller screens
 const NavBar = styled.nav`
     position: fixed;
     top: 0;

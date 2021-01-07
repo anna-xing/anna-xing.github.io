@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faMediumM, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faHeart } from '@fortawesome/free-solid-svg-icons';
 
+import { bounceWrapper } from './util';
+
 const IconContainer = styled.div`
     text-align: center;
 `;
@@ -18,18 +20,13 @@ const FooterText = styled.p`
 
 const FooterContainer = styled.footer`
     text-align: center;
-    margin: ${({theme}) => theme.padding.pageVertical} ${({theme}) => theme.padding.pageHorizontal};
+    padding: ${({theme}) => theme.padding.pageVertical} ${({theme}) => theme.padding.pageHorizontal};
 `;
 
-const StyledIcon = styled(FontAwesomeIcon)`
+const StyledIcon = bounceWrapper(styled(FontAwesomeIcon)`
     margin: 0 12px;
     color: ${({theme}) => theme.color.textPrimary};
-
-    &:hover {
-        color: ${({theme}) => theme.color.textAccent};
-        transition: ${({theme}) => theme.transition.color};
-    }
-`;
+`);
 
 export const Footer = () => {
     return (
