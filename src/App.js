@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
 import { GlobalStyle, lightTheme, darkTheme } from "./themes";
-import { Nav, PageContainer, Footer, useDarkTheme, ThemeToggle } from "./components";
+import { Nav, PageContainer, Footer, useDarkTheme } from "./components";
 import { AboutPage, PlayPage, WorkPage } from "./pages";
 
 export default function App() {
@@ -15,8 +15,7 @@ export default function App() {
       <BrowserRouter>
         <GlobalStyle />
         <PageContainer>
-          <Nav />
-          <ThemeToggle themeType={themeType} toggleThemeType={toggleThemeType} />
+          <Nav themeType={themeType} toggleThemeType={toggleThemeType} />
           <Switch>
             <Route path="/about">
               <AboutPage theme={currTheme} />
