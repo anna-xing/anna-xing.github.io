@@ -22,6 +22,16 @@ export const sharedConstants = {
         pageHorizontalMobile: '16px',
         tagVertical: '6px',
         tagHorizontal: '12px',
+        navVertical: '8px',
+        toggleVertical: '6px',
+        toggleHorizontal: '4px',
+    },
+    margin: {
+        navVertical: '24px',
+        navItemsBetween: '16px',
+        tagVertical: '6px',
+        tagHorizontal: '6px',
+        footerHorizontal: '12px',
     },
     maxWidth: {
         page: '800px',
@@ -48,5 +58,8 @@ export const sharedConstants = {
     outlineType: {
         card: 'solid',
         button: 'solid',
+    },
+    borderRadius: {
+        toggle: '30px',
     },
 };

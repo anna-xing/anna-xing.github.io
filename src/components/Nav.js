@@ -20,7 +20,7 @@ const NavTitle = bounceWrapper(styled.h1`
 
 const NavItem = styled.li`
     line-height: 0;
-    margin: 0 0 0 16px;
+    margin: 0 0 0 ${({theme}) => theme.margin.navItemsBetween};
 `;
 
 const StyledLink = colourChangeWrapper(styled(Link)`
@@ -55,8 +55,8 @@ const NavBar = styled.nav`
     font-family: ${({theme}) => theme.fontFamily.body};
     display: flex;
     justify-content: space-between;
-    padding: 8px 0;
-    margin: 24px 0;
+    padding: ${({theme}) => theme.padding.navVertical} 0;
+    margin: ${({theme}) => theme.margin.navVertical} 0;
 `;
 
 export const Nav = ({theme, themeType, toggleThemeType}) => {
