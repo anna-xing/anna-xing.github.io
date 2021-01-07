@@ -33,8 +33,8 @@ const ToggleContainer = styled.button`
 export const ThemeToggle = ({themeType, toggleThemeType}) => {
     return (
         <ToggleContainer isLightTheme={themeType === 'light'} onClick={toggleThemeType}>
-            <FontAwesomeIcon icon={faCircle} size="med" color={lightTheme.color.textPrimary} />
-            <FontAwesomeIcon icon={faMoon} size="med" color={darkTheme.color.textPrimary} />
+            <FontAwesomeIcon icon={faCircle} color={lightTheme.color.textPrimary} />
+            <FontAwesomeIcon icon={faMoon} color={darkTheme.color.textPrimary} />
         </ToggleContainer>
     );
 };
