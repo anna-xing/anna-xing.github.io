@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.5b694c17.chunk.js",
-    "main.js.map": "/static/js/main.5b694c17.chunk.js.map",
+    "main.js": "/static/js/main.ef9a1122.chunk.js",
+    "main.js.map": "/static/js/main.ef9a1122.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2d3133e2.js",
     "runtime-main.js.map": "/static/js/runtime-main.2d3133e2.js.map",
-    "static/js/2.48912af5.chunk.js": "/static/js/2.48912af5.chunk.js",
-    "static/js/2.48912af5.chunk.js.map": "/static/js/2.48912af5.chunk.js.map",
+    "static/js/2.629db480.chunk.js": "/static/js/2.629db480.chunk.js",
+    "static/js/2.629db480.chunk.js.map": "/static/js/2.629db480.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.176405d7ee44b88f47c871e0c562ef15.js": "/precache-manifest.176405d7ee44b88f47c871e0c562ef15.js",
+    "precache-manifest.5d57d9a875f5b5cf850beb9cf5e93f0e.js": "/precache-manifest.5d57d9a875f5b5cf850beb9cf5e93f0e.js",
     "service-worker.js": "/service-worker.js",
-    "static/js/2.48912af5.chunk.js.LICENSE.txt": "/static/js/2.48912af5.chunk.js.LICENSE.txt",
+    "static/js/2.629db480.chunk.js.LICENSE.txt": "/static/js/2.629db480.chunk.js.LICENSE.txt",
     "static/media/SofiaProBlack.woff": "/static/media/SofiaProBlack.4e6c0771.woff",
     "static/media/SofiaProMedium-Italic.woff": "/static/media/SofiaProMedium-Italic.55ee1f1f.woff",
     "static/media/SofiaProMedium.woff": "/static/media/SofiaProMedium.d356bfed.woff",
@@ -20,7 +20,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2d3133e2.js",
-    "static/js/2.48912af5.chunk.js",
-    "static/js/main.5b694c17.chunk.js"
+    "static/js/2.629db480.chunk.js",
+    "static/js/main.ef9a1122.chunk.js"
   ]
 }
