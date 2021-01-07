@@ -2,7 +2,7 @@ import { sharedConstants } from './shared';
 
 export const lightTheme = {
     color: {
-        backgroundPrimary: '#ffffff',//'#f6f6f6',
+        backgroundPrimary: '#f6f6f6',
         backgroundSecondary: '#d9d9d9',
 
         textPrimary: 'rgb(31,31,31)',
