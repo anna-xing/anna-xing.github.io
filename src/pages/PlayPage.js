@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import styled from 'styled-components';
 
 import {
     BannerText,
@@ -11,12 +12,87 @@ import {
     SingleTextCard,
     SingleCardsGrid,
     BannerContainer,
+    SingleImgCard,
 } from './../components';
+
+import baroque from './../assets/img/art/baroque.jpg';
+import fishing from './../assets/img/art/fishing.png';
+import majorTom from './../assets/img/art/major-tom.jpg';
+import motherTongue from './../assets/img/art/mother-tongue.jpg';
+import skeleton from './../assets/img/art/skeleton.jpg';
+import theDinner from './../assets/img/art/the-dinner.jpg';
+import stillLife from './../assets/img/art/still-life.jpg';
+
+const StyledA = styled.a`
+    margin: auto;
+`;
+
+const writingList = [
+    {
+        link: 'https://anna-xing.medium.com/a-brief-overview-of-big-tech-illustration-flat-design-corporate-memphis-and-alegria-a9b54a35c6b1',
+        tags: ['Writing'],
+        title: 'A Brief Overview of Big Tech Illustration',
+        desc: 'Flat design, Corporate Memphis, and Alegria',
+    },
+    {
+        link: 'https://qwhery.com/collin-county-texas-achieves-record-breaking-turnout-with-location-based-outreach-tools/',
+        tags: ['Writing', 'Qwhery'],
+        title: 'Collin County, Texas Achieves Record-Breaking Voter Turnout',
+        desc: 'The role of location-based outreach tools in its election',
+    },
+    {
+        link: 'https://qwhery.com/introducing-the-qwhery-cloud/',
+        tags: ['Writing', 'Qwhery'],
+        title: 'Engaging Communities with Voice Tech and Location Intelligence',
+        desc: 'What is community engagement, and how can it be improved?',
+    },
+    {
+        link: 'https://qwhery.com/q11-connecting-municipalities-directly-with-residents/',
+        tags: ['Writing', 'Qwhery'],
+        title: 'Q11: Connecting Municipalities Directy with Residents',
+        desc: 'Filling the gaps in municipal information systems',
+    },
+]
+
+const artList = [majorTom, fishing, theDinner, skeleton, baroque, stillLife, motherTongue];
 
 export const PlayPage = ({theme}) => {
     useEffect(() => {
         window.scrollTo(0,0);
     }, []);
+
+    let writingCards = [];
+    writingList.forEach((writing) => {
+        let tagElems = [];
+        writing.tags.forEach((tag) => {
+            tagElems.push(
+                <Tag><TagText>{tag}</TagText></Tag>
+            );
+        });
+
+        writingCards.push(
+            <StyledA href={writing.link}>
+                <SingleCardContainer height={theme.cardSize.writingHeight}>
+                    <SingleTextCard>
+                        <TagContainer>
+                            {tagElems}
+                        </TagContainer>
+                        <HeadingText>{writing.title}</HeadingText>
+                        <BodyText>{writing.desc}</BodyText>
+                    </SingleTextCard>
+                </SingleCardContainer>
+            </StyledA>
+        );
+    });
+
+    let artCards = [];
+    artList.forEach((art) => {
+        artCards.push(
+            <SingleCardContainer height={theme.cardSize.artHeight}>
+                <SingleImgCard bgImg={art} />
+            </SingleCardContainer>
+        );
+    });
 
     return (
         <React.Fragment>
@@ -25,53 +101,8 @@ export const PlayPage = ({theme}) => {
                 <BodyText>An assortment of writing, digital art, and paintings.</BodyText>
             </BannerContainer>
             <SingleCardsGrid>
-                <a href="https://anna-xing.medium.com/a-brief-overview-of-big-tech-illustration-flat-design-corporate-memphis-and-alegria-a9b54a35c6b1" target="_blank" rel="noopener noreferrer">
-                    <SingleCardContainer height={theme.cardSize.writingHeight}>
-                        <SingleTextCard>
-                            <TagContainer>
-                                <Tag><TagText>Writing</TagText></Tag>
-                            </TagContainer>
-                            <HeadingText>A Brief Overview of Big Tech Illustration</HeadingText>
-                            <BodyText>Flat Design, Corporate Memphis, and Alegria</BodyText>
-                        </SingleTextCard>
-                    </SingleCardContainer>
-                </a>
-                <a href="https://qwhery.com/collin-county-texas-achieves-record-breaking-turnout-with-location-based-outreach-tools/" target="_blank" rel="noopener noreferrer">
-                    <SingleCardContainer height={theme.cardSize.writingHeight}>
-                        <SingleTextCard>
-                            <TagContainer>
-                                <Tag><TagText>Writing</TagText></Tag>
-                                <Tag><TagText>Qwhery</TagText></Tag>
-                            </TagContainer>
-                            <HeadingText>Collin County, Texas Achieves Record-Breaking Voter Turnout</HeadingText>
-                            <BodyText>The Role of Location-Based Outreach Tools in its Election</BodyText>
-                        </SingleTextCard>
-                    </SingleCardContainer>
-                </a>
-                <a href="https://qwhery.com/introducing-the-qwhery-cloud/" rel='noopener noreferrer'>
-                    <SingleCardContainer height={theme.cardSize.writingHeight}>
-                        <SingleTextCard>
-                            <TagContainer>
-                                <Tag><TagText>Writing</TagText></Tag>
-                                <Tag><TagText>Qwhery</TagText></Tag>
-                            </TagContainer>
-                            <HeadingText>Engaging Communities with Voice Tech and Location Intelligence</HeadingText>
-                        </SingleTextCard>
-                    </SingleCardContainer>
-                </a>
-                <a href="https://qwhery.com/q11-connecting-municipalities-directly-with-residents/" rel='noopener noreferrer'>
-                    <SingleCardContainer height={theme.cardSize.writingHeight}>
-                        <SingleTextCard>
-                            <TagContainer>
-                                <Tag><TagText>Writing</TagText></Tag>
-                                <Tag><TagText>Qwhery</TagText></Tag>
-                            </TagContainer>
-                            <HeadingText>Q11: Connecting Municipalities Directly with Residents</HeadingText>
-                            <BodyText>Filling the Gaps in Municipal Information Systems</BodyText>
-                        </SingleTextCard>
-                    </SingleCardContainer>
-
-                </a>
+                {writingCards}
+                {artCards}
             </SingleCardsGrid>
         </React.Fragment>
     );

@@ -18,9 +18,11 @@ export const CardContainer = bounceWrapper(styled.div`
 
 // Props: height
 export const SingleCardContainer = styled(CardContainer)`
-    width: ${({theme}) => theme.cardSize.writingWidth};
-    margin-right: ${({theme}) => theme.padding.pageHorizontal};
-`; // TODO: not working ;_;
+    width: calc(${({theme}) => theme.cardSize.writingWidth} - ${({theme}) => theme.padding.pageHorizontal} / 4);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+`;
 
 export const TextCard = styled.div`
     z-index: ${({theme}) => theme.zIndex.overlay};
@@ -35,6 +37,7 @@ export const TextCard = styled.div`
 
 export const SingleTextCard = styled(TextCard)`
     width: 100%;
+    height: ${({theme}) => theme.cardSize.writingHeight};
     min-height: fit-content;
 `;
 
@@ -56,6 +59,11 @@ export const ImgCard = styled.div`
     ].join(' ')};
 `;
 
+export const SingleImgCard = styled(ImgCard)`
+    width: 100%;
+    height: ${({theme}) => theme.cardSize.artHeight};
+`;
+
 export const CardsGrid = styled.div`
     margin: 0;
     padding: ${({theme}) => theme.padding.pageVertical} 0;
@@ -64,5 +72,8 @@ export const CardsGrid = styled.div`
 
 export const SingleCardsGrid = styled(CardsGrid)`
     display: flex;
+    flex-wrap: wrap;
     max-width: 100%;
+    justify-content: space-between;
+    text-align: center;
 `;

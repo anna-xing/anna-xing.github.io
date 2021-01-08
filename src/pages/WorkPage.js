@@ -19,10 +19,92 @@ import bitwheelImg from './../assets/img/work/bitwheel.jpg';
 import hurrEvacImg from './../assets/img/work/hurr-evac.jpg';
 import projectPinkImg from './../assets/img/work/project-pink.jpg';
 
+const projectList = [
+    {
+        link: 'https://github.com/anna-xing/ticker-extension',
+        title: 'Stock Ticker Lookup',
+        desc: 'Chrome extension providing quick access to stock information.',
+        tags: [
+            'JavaScript',
+            'Alpha Vantage API',
+            'Google Chrome API',
+            'HTML',
+            'CSS',
+        ],
+        img: tickerExtImg,
+    },
+    {
+        link: 'https://github.com/anna-xing/oneledger-challenge',
+        title: 'Bitwheel',
+        desc: 'Web app using the blockchain to track used car parts.',
+        tags: [
+            'JavaScript',
+            'OneLedger SDK',
+            'HTML',
+            'CSS',
+        ],
+        img: bitwheelImg,
+    },
+    {
+        link: 'https://github.com/anna-xing/hurricane-evac',
+        title: 'Hurricane Evac',
+        desc: 'Web app helping populations in hurricane-prone areas determine safe courses of evacuation.',
+        tags: [
+            'Python',
+            'Flask',
+            'JavaScript',
+            'MongoDB',
+        ],
+        img: hurrEvacImg,
+    },
+    {
+        link: 'https://github.com/anna-xing/project-pink-update',
+        title: 'Project Pink',
+        desc: 'Web app crowdsourcing location data to help vulnerable women find free menstrual products.',
+        tags: [
+            'JavaScript',
+            'Google Maps API',
+            'HTML',
+            'CSS',
+            'Bootstrap',
+        ],
+        img: projectPinkImg,
+    },
+];
+
 export const WorkPage = ({theme}) => {
     useEffect(() => {
         window.scrollTo(0,0);
     }, []);
+
+    let projectCards = [];
+    let textRight = false;
+    projectList.forEach((project) => {
+        let tagElems = [];
+        project.tags.forEach((tag) => {
+            tagElems.push(
+                <Tag><TagText>{tag}</TagText></Tag>
+            );
+        });
+
+        projectCards.push(
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <CardContainer height={theme.cardSize.projectHeight}>
+                    {textRight ? <ImgCard bgImg={project.img} /> : null}
+                    <TextCard>
+                        <HeadingText>{project.title}</HeadingText>
+                        <BodyText>{project.desc}</BodyText>
+                        <TagContainer>
+                            {tagElems}
+                        </TagContainer>
+                    </TextCard>
+                    {textRight ? null : <ImgCard bgImg={project.img} />}
+                </CardContainer>
+            </a>
+        );
+
+        textRight = !textRight;
+    });
 
     return (
         <React.Fragment>
@@ -31,68 +113,7 @@ export const WorkPage = ({theme}) => {
                 <BodyText>I'm a Computer Science student passionate about using tech, design, and data for social good.</BodyText>
             </BannerContainer>
             <CardsGrid>
-                <a href="https://github.com/anna-xing/ticker-extension" target="_blank" rel="noopener noreferrer">
-                    <CardContainer height={theme.cardSize.projectHeight}>
-                        <TextCard>
-                            <HeadingText>Stock Ticker Lookup</HeadingText>
-                            <BodyText>Chrome extension providing quick access to stock information.</BodyText>
-                            <TagContainer>
-                                <Tag><TagText>Javascript</TagText></Tag>
-                                <Tag><TagText>Alpha Vantage API</TagText></Tag>
-                                <Tag><TagText>Google Chrome API</TagText></Tag>
-                                <Tag><TagText>HTML</TagText></Tag>
-                                <Tag><TagText>CSS</TagText></Tag>
-                            </TagContainer>
-                        </TextCard>
-                        <ImgCard bgImg={tickerExtImg} />
-                    </CardContainer>
-                </a>
-                <a href="https://github.com/anna-xing/oneledger-challenge" target="_blank" rel='noopener noreferrer'>
-                    <CardContainer height={theme.cardSize.projectHeight}>
-                        <ImgCard bgImg={bitwheelImg} />
-                        <TextCard>
-                            <HeadingText>Bitwheel</HeadingText>
-                            <BodyText>Web app using the blockchain to track used car parts.</BodyText>
-                            <TagContainer>
-                                <Tag><TagText>Javascript</TagText></Tag>
-                                <Tag><TagText>OneLedger SDK</TagText></Tag>
-                                <Tag><TagText>HTML</TagText></Tag>
-                                <Tag><TagText>CSS</TagText></Tag>
-                            </TagContainer>
-                        </TextCard>
-                    </CardContainer>
-                </a>
-                <a href="https://github.com/anna-xing/hurricane-evac" target="_blank" rel='noopener noreferrer'>
-                    <CardContainer height={theme.cardSize.projectHeight}>
-                        <TextCard>
-                            <HeadingText>Hurricane Evac</HeadingText>
-                            <BodyText>Web app helping populations in hurricane-prone areas determine safe courses of evacuation.</BodyText>
-                            <TagContainer>
-                                <Tag><TagText>Python</TagText></Tag>
-                                <Tag><TagText>Flask</TagText></Tag>
-                                <Tag><TagText>Javascript</TagText></Tag>
-                                <Tag><TagText>MongoDB</TagText></Tag>
-                            </TagContainer>
-                        </TextCard>
-                        <ImgCard bgImg={hurrEvacImg} />
-                    </CardContainer>
-                </a>
-                <a href="https://github.com/anna-xing/project-pink-update" target="_blank" rel='noopener noreferrer'>
-                    <CardContainer height={theme.cardSize.projectHeight}>
-                        <ImgCard bgImg={projectPinkImg} />
-                        <TextCard>
-                            <HeadingText>Project Pink</HeadingText>
-                            <BodyText>Web app crowdsourcing location data to help vulnerable women find free menstrual products.</BodyText>
-                            <TagContainer>
-                                <Tag><TagText>Javascript</TagText></Tag>
-                                <Tag><TagText>Google Maps API</TagText></Tag>
-                                <Tag><TagText>HTML</TagText></Tag>
-                                <Tag><TagText>CSS</TagText></Tag>
-                                <Tag><TagText>Bootstrap</TagText></Tag>
-                            </TagContainer>
-                        </TextCard>
-                    </CardContainer>
-                </a>
+                {projectCards}
             </CardsGrid>
         </React.Fragment>
     );

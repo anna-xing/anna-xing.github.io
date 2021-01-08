@@ -38,8 +38,8 @@ export const sharedConstants = {
     },
     cardSize: {
         projectHeight: '300px',
-        writingHeight: '348px',
-        writingWidth: '394px',
+        writingHeight: '320px',
+        writingWidth: '382px',
         artHeight: '340px',
     },
     transition: {

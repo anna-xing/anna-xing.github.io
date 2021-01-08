@@ -1,2 +1,3 @@
-# WIP Notes
-- Implement carousel for writing and possibly art (https://blog.logrocket.com/building-carousel-component-react-hooks/)
+Hi! Welcome to my portfolio site.
+
+Built with React (create-react-app) and styled-components, with react-typical for the typing animation.
