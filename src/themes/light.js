@@ -7,10 +7,10 @@ export const lightTheme = {
 
         textPrimary: 'rgb(31,31,31)',
         textSecondary: 'rgba(31,31,31,0.5)',
+        textAccent: '#f7ad00',
 
         cardBoxShadow: 'rgba(0,0,0,0.8)',
         outline: '#1f1f1f',
-        themeIcon: '#f7ad00',
     },
     ...sharedConstants,
 };
