@@ -47,6 +47,7 @@ export const sharedConstants = {
         translateY: 'transform 200ms ease-in-out',
         typical: 2000,
         all: 'all 300ms linear',
+        navTop: 'top 0.6s',
     },
     transform: {
         translateY: 'translateY(-6px)',
