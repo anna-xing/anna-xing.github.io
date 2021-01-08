@@ -10,7 +10,7 @@ export const lightTheme = {
 
         cardBoxShadow: 'rgba(0,0,0,0.8)',
         outline: '#1f1f1f',
-        themeIcon: '#f7c600',
+        themeIcon: '#f7ad00',
     },
     ...sharedConstants,
 };

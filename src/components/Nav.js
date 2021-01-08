@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Link, useLocation } from 'react-router-dom';
 
-import { bounceWrapper, colourChangeWrapper } from './util';
+import { bounceWrapper, colourChangeWrapper, debounce } from './util';
 import { ThemeToggle } from './ThemeToggle';
 
 export const NAV_HEIGHT = '2rem';
@@ -20,7 +20,7 @@ const NavTitle = bounceWrapper(styled.h1`
 
 const NavItem = styled.li`
     line-height: 0;
-    margin: 0 0 0 16px;
+    margin: 0 0 0 ${({theme}) => theme.margin.navItemsBetween};
 `;
 
 const StyledLink = colourChangeWrapper(styled(Link)`
@@ -45,24 +45,42 @@ const LinkContainer = styled.ul`
 `;
 
 const NavBar = styled.nav`
-    position: fixed;
-    top: 0;
-    z-index: ${({theme}) => theme.zIndex.nav};
-    width: calc(100% - ${({theme}) => theme.padding.pageHorizontal} * 2);
-    max-width: calc(${({theme}) => theme.maxWidth.page}
-        + ${({theme}) => theme.padding.pageHorizontal});
-    height: ${NAV_HEIGHT};
-    font-family: ${({theme}) => theme.fontFamily.body};
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 0;
-    margin: 24px 0;
-`;
+        position: fixed;
+        z-index: ${({theme}) => theme.zIndex.nav};
+        width: calc(100% - ${({theme}) => theme.padding.pageHorizontal} * 2);
+        max-width: calc(${({theme}) => theme.maxWidth.page}
+            + ${({theme}) => theme.padding.pageHorizontal});
+        height: ${NAV_HEIGHT};
+        font-family: ${({theme}) => theme.fontFamily.body};
+        display: flex;
+        justify-content: space-between;
+        padding: ${({theme}) => theme.padding.navVertical} 0;
+        margin: ${({theme}) => theme.margin.navVertical} 0;
+        transition: ${({theme}) => theme.transition.navTop};
+    `;
 
 export const Nav = ({theme, themeType, toggleThemeType}) => {
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [visible, setVisible] = useState(true);
+
+    const handleScroll = debounce(() => {
+        const currentScrollPos = window.pageYOffset;
+        setVisible(
+            (prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 50)
+            || currentScrollPos < 100
+        );
+        setPrevScrollPos(currentScrollPos);
+    }, 100);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [prevScrollPos, visible, handleScroll]);
+
     const location = useLocation();
+
     return (
-        <NavBar>
+        <NavBar style={{top: visible ? '0' : '-60px'}}>
             <NavTitle>
                 <Link to='/'>Anna Xing</Link>
             </NavTitle>

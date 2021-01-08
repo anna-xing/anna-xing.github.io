@@ -24,7 +24,7 @@ const FooterContainer = styled.footer`
 `;
 
 const StyledIcon = bounceWrapper(styled(FontAwesomeIcon)`
-    margin: 0 12px;
+    margin: 0 ${({theme}) => theme.margin.footerHorizontal};
     color: ${({theme}) => theme.color.textPrimary};
 `);
 

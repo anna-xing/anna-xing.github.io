@@ -13,8 +13,8 @@ const ToggleContainer = styled.button`
     background: ${({theme}) => theme.color.backgroundPrimary};
     width: 48px;
     height: 30px;
-    padding: 6px 4px;
-    margin: -12px 0 0 18px;
+    padding: ${({theme}) => theme.padding.toggleVertical + ' ' + theme.padding.toggleHorizontal};
+    margin: -12px 0 0 ${({theme}) => theme.margin.navItemsBetween};
     overflow: hidden;
     cursor: pointer;
     align-items: center;
@@ -23,7 +23,7 @@ const ToggleContainer = styled.button`
         theme.outlineType.button,
         theme.color.textPrimary,
     ].join(' ')};
-    border-radius: 30px;
+    border-radius: ${({theme}) => theme.borderRadius.toggle};
     
     &:focus {
         outline: none;
