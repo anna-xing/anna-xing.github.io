@@ -38,9 +38,8 @@ export const sharedConstants = {
     },
     cardSize: {
         projectHeight: '300px',
-        writingHeight: '320px',
-        writingWidth: '382px',
-        artHeight: '340px',
+        playHeight: '320px',
+        playWidth: '382px',
     },
     transition: {
         color: 'color 200ms',
