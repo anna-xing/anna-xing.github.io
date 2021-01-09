@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 import {
@@ -13,6 +13,7 @@ import {
     SingleCardsGrid,
     BannerContainer,
     SingleImgCard,
+    Modal,
 } from './../components';
 
 import baroque from './../assets/img/art/baroque.jpg';
@@ -22,14 +23,11 @@ import motherTongue from './../assets/img/art/mother-tongue.jpg';
 import skeleton from './../assets/img/art/skeleton.jpg';
 import theDinner from './../assets/img/art/the-dinner.jpg';
 import stillLife from './../assets/img/art/still-life.jpg';
+import houseFire from './../assets/img/art/house-fire.jpg';
 
 const StyledA = styled.a`
     margin: auto;
 `;
-
-const showModal = (elem) => {
-
-}
 
 const writingList = [
     {
@@ -53,17 +51,43 @@ const writingList = [
     {
         link: 'https://qwhery.com/q11-connecting-municipalities-directly-with-residents/',
         tags: ['Writing', 'Qwhery'],
-        title: 'Q11: Connecting Municipalities Directy with Residents',
+        title: 'Q11: Connecting Municipalities Directly with Residents',
         desc: 'Filling the gaps in municipal information systems',
     },
 ]
 
-const artList = [majorTom, fishing, theDinner, skeleton, baroque, stillLife, motherTongue];
+const artList = [
+    majorTom, 
+    fishing, 
+    theDinner, 
+    houseFire, 
+    skeleton, 
+    baroque, 
+    stillLife, 
+    motherTongue,
+];
 
 export const PlayPage = ({theme}) => {
     useEffect(() => {
         window.scrollTo(0,0);
     }, []);
+
+    const [modalVisible, setModalVisible] = useState(false);
+    const [lastClicked, setLastClicked] = useState(0);
+
+    const showModal = (lastIndex) => {
+        console.log(lastIndex)
+        setLastClicked(lastIndex);
+        setModalVisible(true);
+    };
+
+    const modal = (img) => {
+        return modalVisible ? 
+            <div onClick={() => { setModalVisible(false) }}>
+                <Modal img={img} />
+            </div>
+        : null;
+    };
 
     let writingCards = [];
     writingList.forEach((writing) => {
@@ -92,9 +116,10 @@ export const PlayPage = ({theme}) => {
     let artCards = [];
     let index = 0;
     artList.forEach((art) => {
+        let currIndex = index;
         artCards.push(
-            <SingleCardContainer height={theme.cardSize.artHeight} onClick={} key={'art-' + index}>
-                <SingleImgCard bgImg={art} />
+            <SingleCardContainer height={theme.cardSize.artHeight} key={'art-' + index}>
+                <SingleImgCard bgImg={art} onClick={() => { showModal(currIndex) }} />
             </SingleCardContainer>
         );
         index++;
@@ -109,6 +134,7 @@ export const PlayPage = ({theme}) => {
             <SingleCardsGrid>
                 {writingCards}
                 {artCards}
+                {modal(artList[lastClicked])}
             </SingleCardsGrid>
         </React.Fragment>
     );

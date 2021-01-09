@@ -62,6 +62,10 @@ export const ImgCard = styled.div`
 export const SingleImgCard = styled(ImgCard)`
     width: 100%;
     height: ${({theme}) => theme.cardSize.artHeight};
+
+    &:hover {
+        cursor: pointer;
+    }
 `;
 
 export const CardsGrid = styled.div`
