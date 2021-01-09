@@ -6,6 +6,13 @@ import {
     BodyText,
     BannerContainer,
     SingleImgCard,
+    Tag,
+    TagText,
+    SingleCardContainer,
+    SingleTextCard,
+    TagContainer,
+    HeadingText,
+    SingleCardsGrid,
     Modal,
 } from './../components';
 
@@ -122,7 +129,7 @@ export const PlayPage = ({theme}) => {
         <React.Fragment>
             <BannerContainer>
                 <BannerText>Odds & Ends</BannerText>
-                <BodyText>This page is currently under construction.</BodyText>
+                <BodyText>An assortment of writing, digital art, and paintings.</BodyText>
             </BannerContainer>
             <SingleCardsGrid>
                 {writingCards}
