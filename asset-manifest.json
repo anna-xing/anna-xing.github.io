@@ -1,26 +1,34 @@
 {
   "files": {
-    "main.js": "/static/js/main.15fcfd84.chunk.js",
-    "main.js.map": "/static/js/main.15fcfd84.chunk.js.map",
+    "main.js": "/static/js/main.acca2caa.chunk.js",
+    "main.js.map": "/static/js/main.acca2caa.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2d3133e2.js",
     "runtime-main.js.map": "/static/js/runtime-main.2d3133e2.js.map",
-    "static/js/2.af90d383.chunk.js": "/static/js/2.af90d383.chunk.js",
-    "static/js/2.af90d383.chunk.js.map": "/static/js/2.af90d383.chunk.js.map",
+    "static/js/2.aee5835a.chunk.js": "/static/js/2.aee5835a.chunk.js",
+    "static/js/2.aee5835a.chunk.js.map": "/static/js/2.aee5835a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bcfb5eb5ec86303682bab6dd08dd8b67.js": "/precache-manifest.bcfb5eb5ec86303682bab6dd08dd8b67.js",
+    "precache-manifest.7ad4fdf33d97a65c95a58ab091df1aa3.js": "/precache-manifest.7ad4fdf33d97a65c95a58ab091df1aa3.js",
     "service-worker.js": "/service-worker.js",
-    "static/js/2.af90d383.chunk.js.LICENSE.txt": "/static/js/2.af90d383.chunk.js.LICENSE.txt",
+    "static/js/2.aee5835a.chunk.js.LICENSE.txt": "/static/js/2.aee5835a.chunk.js.LICENSE.txt",
     "static/media/SofiaProBlack.woff": "/static/media/SofiaProBlack.4e6c0771.woff",
     "static/media/SofiaProMedium-Italic.woff": "/static/media/SofiaProMedium-Italic.55ee1f1f.woff",
     "static/media/SofiaProMedium.woff": "/static/media/SofiaProMedium.d356bfed.woff",
+    "static/media/baroque.jpg": "/static/media/baroque.ac4476fd.jpg",
     "static/media/bitwheel.jpg": "/static/media/bitwheel.e6891657.jpg",
+    "static/media/fishing.png": "/static/media/fishing.95f48b2a.png",
+    "static/media/house-fire.jpg": "/static/media/house-fire.373bf442.jpg",
     "static/media/hurr-evac.jpg": "/static/media/hurr-evac.0feae541.jpg",
+    "static/media/major-tom.jpg": "/static/media/major-tom.b6ec02fb.jpg",
+    "static/media/mother-tongue.jpg": "/static/media/mother-tongue.0ae56b21.jpg",
     "static/media/project-pink.jpg": "/static/media/project-pink.e46f10ca.jpg",
+    "static/media/skeleton.jpg": "/static/media/skeleton.05f6becb.jpg",
+    "static/media/still-life.jpg": "/static/media/still-life.0ea9c681.jpg",
+    "static/media/the-dinner.jpg": "/static/media/the-dinner.f3961a5f.jpg",
     "static/media/ticker-extension.jpg": "/static/media/ticker-extension.06a4439a.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.2d3133e2.js",
-    "static/js/2.af90d383.chunk.js",
-    "static/js/main.15fcfd84.chunk.js"
+    "static/js/2.aee5835a.chunk.js",
+    "static/js/main.acca2caa.chunk.js"
   ]
 }
