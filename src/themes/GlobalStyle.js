@@ -30,6 +30,7 @@ export const GlobalStyle = createGlobalStyle`
         text-align: center;
         background-color: ${({theme}) => theme.color.backgroundPrimary};
         transition: ${({theme}) => theme.transition.all};
+        margin: none;
     }
 
     a {

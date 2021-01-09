@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Typical from 'react-typical';
 
 import {
@@ -11,6 +11,10 @@ import {
 } from './../components';
 
 export const AboutPage = ({theme}) => {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
+
     return (
         <React.Fragment>
             <BannerContainer>

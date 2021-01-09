@@ -5,12 +5,12 @@ export const darkTheme = {
         backgroundPrimary: '#1f1f1f',
         backgroundSecondary: '#525252',
 
-        textPrimary: '#f6f6f6',
-        textSecondary: '#b0b0b0',
+        textPrimary: 'rgb(246,246,246)',
+        textSecondary: 'rgba(246,246,246,0.5)',
+        textAccent: '#f7ad00',
 
         cardBoxShadow: 'rgba(200,200,200,0.8)',
         outline: '#ededed',
-        themeIcon: '#fff78f',
     },
     ...sharedConstants,
 };
