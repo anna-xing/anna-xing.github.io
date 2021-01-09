@@ -27,6 +27,10 @@ const StyledA = styled.a`
     margin: auto;
 `;
 
+const showModal = (elem) => {
+
+}
+
 const writingList = [
     {
         link: 'https://anna-xing.medium.com/a-brief-overview-of-big-tech-illustration-flat-design-corporate-memphis-and-alegria-a9b54a35c6b1',
@@ -66,12 +70,12 @@ export const PlayPage = ({theme}) => {
         let tagElems = [];
         writing.tags.forEach((tag) => {
             tagElems.push(
-                <Tag><TagText>{tag}</TagText></Tag>
+                <Tag key={`${writing.title}-${tag}`}><TagText>{tag}</TagText></Tag>
             );
         });
 
         writingCards.push(
-            <StyledA href={writing.link}>
+            <StyledA href={writing.link} target="_blank" rel="noopener noreferrer" key={writing.title}>
                 <SingleCardContainer height={theme.cardSize.writingHeight}>
                     <SingleTextCard>
                         <TagContainer>
@@ -86,12 +90,14 @@ export const PlayPage = ({theme}) => {
     });
 
     let artCards = [];
+    let index = 0;
     artList.forEach((art) => {
         artCards.push(
-            <SingleCardContainer height={theme.cardSize.artHeight}>
+            <SingleCardContainer height={theme.cardSize.artHeight} onClick={} key={'art-' + index}>
                 <SingleImgCard bgImg={art} />
             </SingleCardContainer>
         );
+        index++;
     });
 
     return (

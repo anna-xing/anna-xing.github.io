@@ -83,12 +83,12 @@ export const WorkPage = ({theme}) => {
         let tagElems = [];
         project.tags.forEach((tag) => {
             tagElems.push(
-                <Tag><TagText>{tag}</TagText></Tag>
+                <Tag key={`${project.title}-${tag}`}><TagText>{tag}</TagText></Tag>
             );
         });
 
         projectCards.push(
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <a href={project.link} target="_blank" rel="noopener noreferrer" key={project.title}>
                 <CardContainer height={theme.cardSize.projectHeight}>
                     {textRight ? <ImgCard bgImg={project.img} /> : null}
                     <TextCard>
