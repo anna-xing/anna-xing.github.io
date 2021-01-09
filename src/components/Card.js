@@ -18,7 +18,7 @@ export const CardContainer = bounceWrapper(styled.div`
 
 // Props: height
 export const SingleCardContainer = styled(CardContainer)`
-    width: calc(${({theme}) => theme.cardSize.writingWidth} - ${({theme}) => theme.padding.pageHorizontal} / 4);
+    width: calc(${({theme}) => theme.cardSize.playWidth} - ${({theme}) => theme.padding.pageHorizontal} / 4);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -37,7 +37,7 @@ export const TextCard = styled.div`
 
 export const SingleTextCard = styled(TextCard)`
     width: 100%;
-    height: ${({theme}) => theme.cardSize.writingHeight};
+    height: ${({theme}) => theme.cardSize.playHeight};
     min-height: fit-content;
 `;
 
@@ -61,10 +61,21 @@ export const ImgCard = styled.div`
 
 export const SingleImgCard = styled(ImgCard)`
     width: 100%;
-    height: ${({theme}) => theme.cardSize.artHeight};
+    height: 100%;
 
     &:hover {
         cursor: pointer;
+    }
+
+    & > div {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+
+        & div {
+            margin: 0;
+        }
     }
 `;
 

@@ -14,6 +14,7 @@ import {
     HeadingText,
     SingleCardsGrid,
     Modal,
+    tileCards,
 } from './../components';
 
 import baroque from './../assets/img/art/baroque.jpg';
@@ -57,14 +58,38 @@ const writingList = [
 ]
 
 const artList = [
-    majorTom, 
-    fishing, 
-    theDinner, 
-    houseFire, 
-    skeleton, 
-    baroque, 
-    stillLife, 
-    motherTongue,
+    {
+        art: majorTom,
+        tag: 'Digital Painting',
+    },
+    {
+        art: fishing,
+        tag: 'Digital Painting',
+    },
+    {
+        art: skeleton,
+        tag: 'Digital Painting',
+    },
+    {
+        art: motherTongue,
+        tag: 'Colour Pencil',
+    },
+    {
+        art: baroque,
+        tag: 'Oil Painting',
+    },
+    {
+        art: theDinner,
+        tag: 'Acrylic Painting',
+    },
+    {
+        art: houseFire,
+        tag: 'Digital Painting',
+    },
+    {
+        art: stillLife,
+        tag: 'Acrylic Painting',
+    },
 ];
 
 export const PlayPage = ({theme}) => {
@@ -100,7 +125,7 @@ export const PlayPage = ({theme}) => {
 
         writingCards.push(
             <StyledA href={writing.link} target="_blank" rel="noopener noreferrer" key={writing.title}>
-                <SingleCardContainer height={theme.cardSize.writingHeight}>
+                <SingleCardContainer height={theme.cardSize.playHeight}>
                     <SingleTextCard>
                         <TagContainer>
                             {tagElems}
@@ -118,8 +143,12 @@ export const PlayPage = ({theme}) => {
     artList.forEach((art) => {
         let currIndex = index;
         artCards.push(
-            <SingleCardContainer height={theme.cardSize.artHeight} key={'art-' + index}>
-                <SingleImgCard bgImg={art} onClick={() => { showModal(currIndex) }} />
+            <SingleCardContainer height={theme.cardSize.playHeight} key={'art-' + index}>
+                <SingleImgCard bgImg={art.art} onClick={() => { showModal(currIndex) }}>
+                    <TagContainer>
+                        <Tag><TagText>{art.tag}</TagText></Tag>
+                    </TagContainer>
+                </SingleImgCard>
             </SingleCardContainer>
         );
         index++;
@@ -132,9 +161,8 @@ export const PlayPage = ({theme}) => {
                 <BodyText>An assortment of writing, digital art, and paintings.</BodyText>
             </BannerContainer>
             <SingleCardsGrid>
-                {writingCards}
-                {artCards}
-                {modal(artList[lastClicked])}
+                {tileCards(writingCards, artCards)}
+                {modal(artList[lastClicked].art)}
             </SingleCardsGrid>
         </React.Fragment>
     );

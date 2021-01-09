@@ -38,3 +38,21 @@ export const debounce = (func, wait, immediate) => {
         if (callNow) func.apply(context, args);
     };
 };
+
+export const tileCards = (list1, list2) => {
+    let finalList = [list1.shift()];
+    let minLength = Math.min(list1.length, list2.length);
+    
+    for (let i = 0; i < Math.floor(minLength / 2) + 1; i++) {
+        finalList.push(list2.shift());
+        finalList.push(list2.shift());
+        finalList.push(list1.shift());
+        finalList.push(list1.shift());
+    }
+
+    if (list1) finalList = finalList.concat(list1);
+    if (list2) finalList = finalList.concat(list2);
+
+    return finalList;
+    
+}
