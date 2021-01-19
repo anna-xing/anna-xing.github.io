@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5317152736816efa36b87535db089ae6",
+    "revision": "3cab9a1bef44911e941c9c0e77134988",
     "url": "/index.html"
   },
   {
-    "revision": "c784008e1325ab2769ba",
-    "url": "/static/js/2.4310cea1.chunk.js"
+    "revision": "811b9f78c89efe2d4423",
+    "url": "/static/js/2.71a0c8ca.chunk.js"
   },
   {
     "revision": "a3c66bc87fa121efed0250fdac2dfa2b",
-    "url": "/static/js/2.4310cea1.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.71a0c8ca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "26a0aa2c263ce7968113",
-    "url": "/static/js/main.9c6ccde8.chunk.js"
+    "revision": "f2bb11f592acd098a5f0",
+    "url": "/static/js/main.251bf57e.chunk.js"
   },
   {
     "revision": "ec37339358264786a889",
@@ -54,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0feae5419c09da53519643b9b339bd29",
     "url": "/static/media/hurr-evac.0feae541.jpg"
+  },
+  {
+    "revision": "b52ad59ecccd5c2657d9486b48735e58",
+    "url": "/static/media/juicebox.b52ad59e.png"
   },
   {
     "revision": "b6ec02fb75f7ab903bc6ea8d022dceb2",
