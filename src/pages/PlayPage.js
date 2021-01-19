@@ -27,6 +27,7 @@ import stillLife from './../assets/img/art/still-life.jpg';
 import houseFire from './../assets/img/art/house-fire.jpg';
 import sausageBun from './../assets/img/art/sausagebun.png';
 import bunny from './../assets/img/art/bunny.png';
+import juicebox from './../assets/img/art/juicebox.png';
 
 const StyledA = styled.a`
     margin: auto;
@@ -75,6 +76,10 @@ const artList = [
     {
         art: fishing,
         tag: 'Digital Painting',
+    },
+    {
+        art: juicebox,
+        tag: '2.5D Animation (WIP)',
     },
     {
         art: skeleton,
