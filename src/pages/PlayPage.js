@@ -25,6 +25,8 @@ import skeleton from './../assets/img/art/skeleton.jpg';
 import theDinner from './../assets/img/art/the-dinner.jpg';
 import stillLife from './../assets/img/art/still-life.jpg';
 import houseFire from './../assets/img/art/house-fire.jpg';
+import sausageBun from './../assets/img/art/sausagebun.png';
+import bunny from './../assets/img/art/bunny.png';
 
 const StyledA = styled.a`
     margin: auto;
@@ -58,6 +60,14 @@ const writingList = [
 ]
 
 const artList = [
+    {
+        art: bunny,
+        tag: 'Logo Design',
+    },
+    {
+        art: sausageBun,
+        tag: 'Digital Painting',
+    },
     {
         art: majorTom,
         tag: 'Digital Painting',
