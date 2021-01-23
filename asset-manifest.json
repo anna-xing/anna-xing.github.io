@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.0e465812.chunk.js",
-    "main.js.map": "/static/js/main.0e465812.chunk.js.map",
+    "main.js": "/static/js/main.18920449.chunk.js",
+    "main.js.map": "/static/js/main.18920449.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2d3133e2.js",
     "runtime-main.js.map": "/static/js/runtime-main.2d3133e2.js.map",
-    "static/js/2.71a0c8ca.chunk.js": "/static/js/2.71a0c8ca.chunk.js",
-    "static/js/2.71a0c8ca.chunk.js.map": "/static/js/2.71a0c8ca.chunk.js.map",
+    "static/js/2.30570071.chunk.js": "/static/js/2.30570071.chunk.js",
+    "static/js/2.30570071.chunk.js.map": "/static/js/2.30570071.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.32141f63d71e712f5defac6fb2b13ba3.js": "/precache-manifest.32141f63d71e712f5defac6fb2b13ba3.js",
+    "precache-manifest.f72698ddb3e28e0ecb564c2f5740457b.js": "/precache-manifest.f72698ddb3e28e0ecb564c2f5740457b.js",
     "service-worker.js": "/service-worker.js",
-    "static/js/2.71a0c8ca.chunk.js.LICENSE.txt": "/static/js/2.71a0c8ca.chunk.js.LICENSE.txt",
+    "static/js/2.30570071.chunk.js.LICENSE.txt": "/static/js/2.30570071.chunk.js.LICENSE.txt",
     "static/media/SofiaProBlack.woff": "/static/media/SofiaProBlack.4e6c0771.woff",
     "static/media/SofiaProMedium-Italic.woff": "/static/media/SofiaProMedium-Italic.55ee1f1f.woff",
     "static/media/SofiaProMedium.woff": "/static/media/SofiaProMedium.d356bfed.woff",
@@ -21,6 +21,7 @@
     "static/media/hurr-evac.jpg": "/static/media/hurr-evac.0feae541.jpg",
     "static/media/juicebox.png": "/static/media/juicebox.b52ad59e.png",
     "static/media/major-tom.jpg": "/static/media/major-tom.b6ec02fb.jpg",
+    "static/media/moonshine.jpg": "/static/media/moonshine.c7386ef1.jpg",
     "static/media/mother-tongue.jpg": "/static/media/mother-tongue.0ae56b21.jpg",
     "static/media/project-pink.jpg": "/static/media/project-pink.e46f10ca.jpg",
     "static/media/sausagebun.png": "/static/media/sausagebun.dde9e122.png",
@@ -31,7 +32,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2d3133e2.js",
-    "static/js/2.71a0c8ca.chunk.js",
-    "static/js/main.0e465812.chunk.js"
+    "static/js/2.30570071.chunk.js",
+    "static/js/main.18920449.chunk.js"
   ]
 }
