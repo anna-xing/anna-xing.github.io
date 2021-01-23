@@ -28,6 +28,7 @@ import houseFire from './../assets/img/art/house-fire.jpg';
 import sausageBun from './../assets/img/art/sausagebun.png';
 import bunny from './../assets/img/art/bunny.png';
 import juicebox from './../assets/img/art/juicebox.png';
+import moonshine from './../assets/img/art/moonshine.jpg';
 
 const StyledA = styled.a`
     margin: auto;
@@ -70,16 +71,16 @@ const artList = [
         tag: 'Digital Painting',
     },
     {
+        art: juicebox,
+        tag: '2.5D Animation (WIP)',
+    },
+    {
         art: majorTom,
         tag: 'Digital Painting',
     },
     {
         art: fishing,
         tag: 'Digital Painting',
-    },
-    {
-        art: juicebox,
-        tag: '2.5D Animation (WIP)',
     },
     {
         art: skeleton,
@@ -98,12 +99,16 @@ const artList = [
         tag: 'Acrylic Painting',
     },
     {
+        art: stillLife,
+        tag: 'Acrylic Painting',
+    },
+    {
         art: houseFire,
         tag: 'Digital Painting',
     },
     {
-        art: stillLife,
-        tag: 'Acrylic Painting',
+	art: moonshine,
+	tag: 'India Ink',
     },
 ];
 
