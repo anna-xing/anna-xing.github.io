@@ -29,8 +29,8 @@ export const AboutPage = ({theme}) => {
                 </BodyText>
                 <BodyText>
                     I'm passionate about human-centered design, which is why I'm pursuing a Human-Computer 
-                    Interaction specialization within my degree. I love applying interdisciplinary 
-                    knowledge to build products with the potential to do social good.
+                    Interaction specialization and Cognitive Science minor within my degree. I love applying 
+	            interdisciplinary knowledge to build products with the potential to do social good.
                 </BodyText>
                 <BodyText>
                     To chat about anything from software to Spanish basilicas, feel free to connect with 
