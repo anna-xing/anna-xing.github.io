@@ -22,15 +22,16 @@ export const AboutPage = ({theme}) => {
             </BannerContainer>
             <TextContainer>
                 <BodyText>
-                    I'm a second-year BCS student at the University of Waterloo. 
-                    This past fall, I was a Web Developer for UW's Computer Science Computing Facility,
+                    I'm a second-year BCS student at the University of Waterloo.
+	            This spring, I'll be working as a Full-Stack Portfolio Analytics Developer at TD.
+                    In the past, I've also been a Web Developer for UW's Computer Science Computing Facility,
                     where I worked on applications supporting faculty and students. 
-                    I'm currently seeking opportunities for Spring 2021.
+	            I'm currently seeking opportunities for Winter 2022 in software development and UI/UX.
                 </BodyText>
                 <BodyText>
                     I'm passionate about human-centered design, which is why I'm pursuing a Human-Computer 
                     Interaction specialization and Cognitive Science minor within my degree. I love applying 
-	            interdisciplinary knowledge to build products with the potential to do social good.
+	            interdisciplinary knowledge to design and build products with the potential to do social good.
                 </BodyText>
                 <BodyText>
                     To chat about anything from software to Spanish basilicas, feel free to connect with 
