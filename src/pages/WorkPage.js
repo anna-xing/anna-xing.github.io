@@ -18,8 +18,23 @@ import tickerExtImg from './../assets/img/work/ticker-extension.jpg';
 import bitwheelImg from './../assets/img/work/bitwheel.jpg';
 import hurrEvacImg from './../assets/img/work/hurr-evac.jpg';
 import projectPinkImg from './../assets/img/work/project-pink.jpg';
+import cwbImg from './../assets/img/work/cwb.jpg';
 
 const projectList = [
+    {
+	link: 'https://on-this-day-cwb.herokuapp.com/',
+	title: 'Classrooms Without Borders: On This Day',
+	desc: 'Web app engaging students in Holocaust history through archival research.',
+	tags: [
+	    'JavaScript',
+	    'React',
+	    'Firebase',
+            'Material UI',
+            'CSS',
+	    'Figma',
+        ],
+	img: cwbImg,
+    },
     {
         link: 'https://github.com/anna-xing/ticker-extension',
         title: 'Stock Ticker Lookup',
