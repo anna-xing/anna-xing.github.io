@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 
 import { GlobalStyle, lightTheme, darkTheme } from "./themes";
 import { Nav, PageContainer, Footer, useDarkTheme } from "./components";
-import { AboutPage, PlayPage, WorkPage } from "./pages";
+import { AboutPage, PlayPage, WorkPage, ProjectPage } from "./pages";
 
 export default function App() {
   const [themeType, toggleThemeType] = useDarkTheme();
@@ -17,15 +17,10 @@ export default function App() {
         <PageContainer>
           <Nav theme={currTheme} themeType={themeType} toggleThemeType={toggleThemeType} />
           <Switch>
-            <Route path="/about">
-              <AboutPage theme={currTheme} />
-            </Route>
-            <Route path="/play">
-              <PlayPage theme={currTheme} />
-            </Route>
-            <Route path="/">
-              <WorkPage theme={currTheme} />
-            </Route>
+            <Route path="/about" children={<AboutPage theme={currTheme} />} />
+            <Route path="/play" children={<PlayPage theme={currTheme} />} />
+            <Route path="/work/:id" children={<ProjectPage />} />
+            <Route path="/" children={<WorkPage theme={currTheme} />} />
           </Switch>
           <Footer />
         </PageContainer>

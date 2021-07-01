@@ -54,5 +54,17 @@ export const tileCards = (list1, list2) => {
     if (list2) finalList = finalList.concat(list2);
 
     return finalList;
-    
-}
+};
+
+export const idToTitle = id => {
+    let words = id.split('-');
+    let title = words.map(word =>
+        `${word.charAt(0).toUpperCase()}${word.substr(1)}`
+    );
+
+    return title.join(' ');
+};
+
+export const titleToId = title => {
+    return title.replaceAll(' ', '-').toLowerCase();
+};

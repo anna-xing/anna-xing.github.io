@@ -86,7 +86,9 @@ export const Nav = ({theme, themeType, toggleThemeType}) => {
             </NavTitle>
             <LinkContainer>
                 <NavItem>
-                    <StyledLink to='/' active={location.pathname === '/' ? 1 : 0}>Work</StyledLink>
+                    <StyledLink to='/' active={
+                        location.pathname === '/' || location.pathname.substr(0, 5) === '/work' ? 1 : 0
+                    }>Work</StyledLink>
                 </NavItem>
                 <NavItem>
                     <StyledLink to='/play' active={location.pathname === '/play' ? 1 : 0}>Play</StyledLink>

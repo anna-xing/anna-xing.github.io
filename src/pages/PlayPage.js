@@ -17,14 +17,14 @@ import {
     tileCards,
 } from './../components';
 
-import baroque from './../assets/img/art/baroque.jpg';
-import fishing from './../assets/img/art/fishing.png';
-import majorTom from './../assets/img/art/major-tom.jpg';
-import motherTongue from './../assets/img/art/mother-tongue.jpg';
-import skeleton from './../assets/img/art/skeleton.jpg';
-import theDinner from './../assets/img/art/the-dinner.jpg';
-import stillLife from './../assets/img/art/still-life.jpg';
-import houseFire from './../assets/img/art/house-fire.jpg';
+import baroque from './../assets/art/baroque.jpg';
+import fishing from './../assets/art/fishing.png';
+import majorTom from './../assets/art/major-tom.jpg';
+import motherTongue from './../assets/art/mother-tongue.jpg';
+import skeleton from './../assets/art/skeleton.jpg';
+import theDinner from './../assets/art/the-dinner.jpg';
+import stillLife from './../assets/art/still-life.jpg';
+import houseFire from './../assets/art/house-fire.jpg';
 
 const StyledA = styled.a`
     margin: auto;
@@ -92,7 +92,7 @@ const artList = [
     },
 ];
 
-export const PlayPage = ({theme}) => {
+export const PlayPage = ({ theme }) => {
     useEffect(() => {
         window.scrollTo(0,0);
     }, []);

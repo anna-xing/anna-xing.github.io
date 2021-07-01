@@ -12,12 +12,13 @@ import {
     ImgCard,
     CardsGrid,
     BannerContainer,
+    titleToId,
 } from "./../components";
 
-import tickerExtImg from './../assets/img/work/ticker-extension.jpg';
-import bitwheelImg from './../assets/img/work/bitwheel.jpg';
-import hurrEvacImg from './../assets/img/work/hurr-evac.jpg';
-import projectPinkImg from './../assets/img/work/project-pink.jpg';
+import tickerExtImg from './../assets/work/stock-ticker-lookup/stock-ticker-lookup.jpg';
+import bitwheelImg from './../assets/work/bitwheel/bitwheel.jpg';
+import hurrEvacImg from './../assets/work/hurricane-evac/hurricane-evac.jpg';
+import projectPinkImg from './../assets/work/project-pink/project-pink.jpg';
 
 const projectList = [
     {
@@ -88,7 +89,7 @@ export const WorkPage = ({theme}) => {
         });
 
         projectCards.push(
-            <a href={project.link} target="_blank" rel="noopener noreferrer" key={project.title}>
+            <a href={`/work/${titleToId(project.title)}`} hosting={project.link} target="_blank" rel="noopener noreferrer" key={project.title}>
                 <CardContainer height={theme.cardSize.projectHeight}>
                     {textRight ? <ImgCard bgImg={project.img} /> : null}
                     <TextCard>
