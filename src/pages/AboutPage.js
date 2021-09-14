@@ -25,9 +25,10 @@ export const AboutPage = ({theme}) => {
                     I'm a third-year BCS student at the University of Waterloo, graduating in April 2024.
 	            In my spare time, I volunteer as a Software Developer and Product Designer at Develop for Good, 
 	            where I'm building a full-stack web app for the educational nonprofit 
-	    	    <TextLink href="https://classroomswithoutborders.org/" target="_blank">Classrooms Without Borders</TextLink>!
+	    	    <TextLink href="https://classroomswithoutborders.org/" target="_blank"> Classrooms Without Borders</TextLink>! 
 	    	    I'm also currently working on a complete website redesign for the climate nonprofit 
-	    	    </TextLink href="https://www.greenprobono.org/" target="_blank">Green Pro Bono</TextLink>.
+	    	    <TextLink href="https://www.greenprobono.org/" target="_blank"> Green Pro Bono</TextLink>. 
+	    	    (I'm a big fan of great causes!)
 	    	</BodyText>
 	    	<BodyText>
                     In the past, I've interned as a Portfolio Analytics Developer at TD, as well as 
@@ -55,7 +56,7 @@ export const AboutPage = ({theme}) => {
                             ' reading pretentious fiction.', theme.transition.typical,
                             ' writing articles and short stories.', theme.transition.typical,
                             ' learning about architecture and design.', theme.transition.typical,
-                            ' playing volleyball.', theme.transition.typical,
+                            ' playing volleyball or basketball.', theme.transition.typical,
                         ]}
                         loop={Infinity}
                         wrapper={BodyTextSpan}
