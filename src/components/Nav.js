@@ -86,13 +86,16 @@ export const Nav = ({theme, themeType, toggleThemeType}) => {
             </NavTitle>
             <LinkContainer>
                 <NavItem>
-                    <StyledLink to='/' active={location.pathname === '/' ? 1 : 0}>Work</StyledLink>
+                    <StyledLink to='/' active={location.pathname === '/'}>Work</StyledLink>
                 </NavItem>
                 <NavItem>
-                    <StyledLink to='/play' active={location.pathname === '/play' ? 1 : 0}>Play</StyledLink>
+                    <StyledLink to='/projects' active={location.pathname === '/projects'}>Projects</StyledLink>
                 </NavItem>
                 <NavItem>
-                    <StyledLink to='/about' active={location.pathname === '/about' ? 1 : 0}>About</StyledLink>
+                    <StyledLink to='/play' active={location.pathname === '/play'}>Play</StyledLink>
+                </NavItem>
+                <NavItem>
+                    <StyledLink to='/about' active={location.pathname === '/about'}>About</StyledLink>
                 </NavItem>
                 <NavItem>
                     <StyledA href='https://drive.google.com/file/d/1ZqcecURszhB7Q_R0ZfTt-0tmJ1LMavxU/view' target='_blank' rel='noopener noreferrer'>

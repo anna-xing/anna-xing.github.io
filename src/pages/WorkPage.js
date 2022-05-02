@@ -1,135 +1,94 @@
 import React, { useEffect } from "react";
 
-import { 
-    BannerText,
-    HeadingText,
-    BodyText,
-    TagText,
-    Tag,
-    TagContainer,
-    CardContainer,
-    TextCard,
-    ImgCard,
-    CardsGrid,
-    BannerContainer,
+import {
+  BannerText,
+  BodyText,
+  CardsGrid,
+  BannerContainer,
+  WorkCard,
 } from "./../components";
 
-import tickerExtImg from './../assets/img/work/ticker-extension.jpg';
-import bitwheelImg from './../assets/img/work/bitwheel.jpg';
-import hurrEvacImg from './../assets/img/work/hurr-evac.jpg';
-import projectPinkImg from './../assets/img/work/project-pink.jpg';
-import cwbImg from './../assets/img/work/cwb.jpg';
+import {
+  upsolveImg,
+  tdBankImg,
+  uWaterlooImg,
+} from "./../assets/img/work";
 
-const projectList = [
-    {
-	link: 'https://on-this-day-cwb.herokuapp.com/',
-	title: 'Classrooms Without Borders: On This Day',
-	desc: 'Web app engaging students in Holocaust history through archival research.',
-	tags: [
-	    'JavaScript',
-	    'React',
-	    'Firebase',
-            'Material UI',
-            'CSS',
-	    'Figma',
-        ],
-	img: cwbImg,
-    },
-    {
-        link: 'https://github.com/anna-xing/ticker-extension',
-        title: 'Stock Ticker Lookup',
-        desc: 'Chrome extension providing quick access to stock information.',
-        tags: [
-            'JavaScript',
-            'Alpha Vantage API',
-            'Google Chrome API',
-            'HTML',
-            'CSS',
-        ],
-        img: tickerExtImg,
-    },
-    {
-        link: 'https://github.com/anna-xing/oneledger-challenge',
-        title: 'Bitwheel',
-        desc: 'Web app using the blockchain to track used car parts.',
-        tags: [
-            'JavaScript',
-            'OneLedger SDK',
-            'HTML',
-            'CSS',
-        ],
-        img: bitwheelImg,
-    },
-    {
-        link: 'https://github.com/anna-xing/hurricane-evac',
-        title: 'Hurricane Evac',
-        desc: 'Web app helping populations in hurricane-prone areas determine safe courses of evacuation.',
-        tags: [
-            'Python',
-            'Flask',
-            'JavaScript',
-            'MongoDB',
-        ],
-        img: hurrEvacImg,
-    },
-    {
-        link: 'https://github.com/anna-xing/project-pink-update',
-        title: 'Project Pink',
-        desc: 'Web app crowdsourcing location data to help vulnerable women find free menstrual products.',
-        tags: [
-            'JavaScript',
-            'Google Maps API',
-            'HTML',
-            'CSS',
-            'Bootstrap',
-        ],
-        img: projectPinkImg,
-    },
-];
+const workList = [
+  {
+    link: "https://upsolve.org",
+    title: "Upsolve: Software Engineer Intern",
+    desc: "Building legal tech to empower all Americans to access their civil and financial rights.",
+    term: "Winter 2022",
+    tags: [
+      "TypeScript",
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "Objection.js",
+      "Docker",
+      "CSS",
+      "DataDog",
+      "XState",
+      "Google Analytics API",
+    ],
+    img: upsolveImg,
+  },
+  {
+    title: "TD Bank: Portfolio Analytics Developer",
+    desc: "Building web applications to support portfolio manager activites.",
+    term: "Spring 2021",
+    tags: [
+      "Python",
+      "Django",
+      "JavaScript",
+      "React",
+      "SQL",
+      "XLSXWriter",
+      "VirtualBox",
+      "Jira",
+    ],
+    img: tdBankImg,
+  },
+  {
+    link: "https://uwaterloo.ca/computer-science-computing-facility/",
+    title: "UWaterloo CSCF: Web Application Developer",
+    desc: "Building web applications for student and faculty use.",
+    term: "Fall 2020",
+    tags: [
+      "Python",
+      "JavaScript",
+      "CSS",
+      "PostgreSQL",
+    ],
+    img: uWaterlooImg,
+  }
+]
 
-export const WorkPage = ({theme}) => {
-    useEffect(() => {
-        window.scrollTo(0,0);
-    }, []);
+export const WorkPage = ({ theme }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    let projectCards = [];
-    let textRight = false;
-    projectList.forEach((project) => {
-        let tagElems = [];
-        project.tags.forEach((tag) => {
-            tagElems.push(
-                <Tag key={`${project.title}-${tag}`}><TagText>{tag}</TagText></Tag>
-            );
-        });
+  let textRight = false;
+  let workCards = [];
+  workList.forEach((workItem) => {
+    workCards.push(WorkCard(workItem, theme, textRight));
+    textRight = !textRight;
+  });
 
-        projectCards.push(
-            <a href={project.link} target="_blank" rel="noopener noreferrer" key={project.title}>
-                <CardContainer height={theme.cardSize.projectHeight}>
-                    {textRight ? <ImgCard bgImg={project.img} /> : null}
-                    <TextCard>
-                        <HeadingText>{project.title}</HeadingText>
-                        <BodyText>{project.desc}</BodyText>
-                        <TagContainer>
-                            {tagElems}
-                        </TagContainer>
-                    </TextCard>
-                    {textRight ? null : <ImgCard bgImg={project.img} />}
-                </CardContainer>
-            </a>
-        );
-
-        textRight = !textRight;
-    });
-
-    return (
-        <React.Fragment>
-            <BannerContainer>
-                <BannerText>Hi! I'm Anna.</BannerText>
-                <BodyText>I'm a Computer Science student passionate about using tech, design, and data for social good.</BodyText>
-            </BannerContainer>
-            <CardsGrid>
-                {projectCards}
-            </CardsGrid>
-        </React.Fragment>
-    );
+  return (
+    <React.Fragment>
+      <BannerContainer>
+        <BannerText>Hi! I'm Anna.</BannerText>
+        <BodyText>
+          I'm a Computer Science student passionate about tech, design, and data for social good.
+          Here's where I've worked in the past.
+        </BodyText>
+      </BannerContainer>
+      <CardsGrid>
+        {workCards}
+      </CardsGrid>
+    </React.Fragment>
+  );
 };

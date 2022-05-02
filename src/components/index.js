@@ -10,3 +10,4 @@ export * from './Footer';
 export * from './ThemeToggle';
 export * from './util';
 export * from './Modal';
+export * from './WorkCard';
