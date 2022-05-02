@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "69322308edafb93e62d53e1ec580fb24",
+    "revision": "860bc8cfa9e9945af87263dcd18446b8",
     "url": "/index.html"
   },
   {
-    "revision": "d6ccdc39074ac0ee8c4b",
-    "url": "/static/js/2.bccb1ead.chunk.js"
+    "revision": "05f4dd75ac3d116d3a7a",
+    "url": "/static/js/2.e920df7b.chunk.js"
   },
   {
     "revision": "a3c66bc87fa121efed0250fdac2dfa2b",
-    "url": "/static/js/2.bccb1ead.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.e920df7b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "06a3c59a07140d28f58b",
-    "url": "/static/js/main.fe51aeb1.chunk.js"
+    "revision": "777fe6a1d1b8247ad826",
+    "url": "/static/js/main.e6df3e68.chunk.js"
   },
   {
     "revision": "ec37339358264786a889",
@@ -92,11 +92,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/still-life.0ea9c681.jpg"
   },
   {
+    "revision": "4a6cbd05225400bda55ba6a965f39963",
+    "url": "/static/media/td-bank.4a6cbd05.jpg"
+  },
+  {
     "revision": "f3961a5fb6651ba9bdc1bfba87c804d9",
     "url": "/static/media/the-dinner.f3961a5f.jpg"
   },
   {
     "revision": "06a4439a4faa3eb3bd503e3587689048",
     "url": "/static/media/ticker-extension.06a4439a.jpg"
+  },
+  {
+    "revision": "b9cfdc3302302b3558262a78a6bd4745",
+    "url": "/static/media/upsolve.b9cfdc33.jpg"
+  },
+  {
+    "revision": "a291100fbd87702ee9b6b677c2487683",
+    "url": "/static/media/uwaterloo.a291100f.jpg"
   }
 ]);

@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.fe51aeb1.chunk.js",
-    "main.js.map": "/static/js/main.fe51aeb1.chunk.js.map",
+    "main.js": "/static/js/main.e6df3e68.chunk.js",
+    "main.js.map": "/static/js/main.e6df3e68.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2d3133e2.js",
     "runtime-main.js.map": "/static/js/runtime-main.2d3133e2.js.map",
-    "static/js/2.bccb1ead.chunk.js": "/static/js/2.bccb1ead.chunk.js",
-    "static/js/2.bccb1ead.chunk.js.map": "/static/js/2.bccb1ead.chunk.js.map",
+    "static/js/2.e920df7b.chunk.js": "/static/js/2.e920df7b.chunk.js",
+    "static/js/2.e920df7b.chunk.js.map": "/static/js/2.e920df7b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.991deda97797dd64214b6a337266a405.js": "/precache-manifest.991deda97797dd64214b6a337266a405.js",
+    "precache-manifest.9d58c37870392a5e5dff800f30298124.js": "/precache-manifest.9d58c37870392a5e5dff800f30298124.js",
     "service-worker.js": "/service-worker.js",
-    "static/js/2.bccb1ead.chunk.js.LICENSE.txt": "/static/js/2.bccb1ead.chunk.js.LICENSE.txt",
+    "static/js/2.e920df7b.chunk.js.LICENSE.txt": "/static/js/2.e920df7b.chunk.js.LICENSE.txt",
     "static/media/SofiaProBlack.woff": "/static/media/SofiaProBlack.4e6c0771.woff",
     "static/media/SofiaProMedium-Italic.woff": "/static/media/SofiaProMedium-Italic.55ee1f1f.woff",
     "static/media/SofiaProMedium.woff": "/static/media/SofiaProMedium.d356bfed.woff",
@@ -28,12 +28,15 @@
     "static/media/sausagebun.png": "/static/media/sausagebun.dde9e122.png",
     "static/media/skeleton.jpg": "/static/media/skeleton.05f6becb.jpg",
     "static/media/still-life.jpg": "/static/media/still-life.0ea9c681.jpg",
+    "static/media/td-bank.jpg": "/static/media/td-bank.4a6cbd05.jpg",
     "static/media/the-dinner.jpg": "/static/media/the-dinner.f3961a5f.jpg",
-    "static/media/ticker-extension.jpg": "/static/media/ticker-extension.06a4439a.jpg"
+    "static/media/ticker-extension.jpg": "/static/media/ticker-extension.06a4439a.jpg",
+    "static/media/upsolve.jpg": "/static/media/upsolve.b9cfdc33.jpg",
+    "static/media/uwaterloo.jpg": "/static/media/uwaterloo.a291100f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.2d3133e2.js",
-    "static/js/2.bccb1ead.chunk.js",
-    "static/js/main.fe51aeb1.chunk.js"
+    "static/js/2.e920df7b.chunk.js",
+    "static/js/main.e6df3e68.chunk.js"
   ]
 }
