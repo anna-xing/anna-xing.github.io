@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.7b1304eb.chunk.js",
-    "main.js.map": "/static/js/main.7b1304eb.chunk.js.map",
+    "main.js": "/static/js/main.fe51aeb1.chunk.js",
+    "main.js.map": "/static/js/main.fe51aeb1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2d3133e2.js",
     "runtime-main.js.map": "/static/js/runtime-main.2d3133e2.js.map",
     "static/js/2.bccb1ead.chunk.js": "/static/js/2.bccb1ead.chunk.js",
     "static/js/2.bccb1ead.chunk.js.map": "/static/js/2.bccb1ead.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.84f5746fa69f514dea3b20df3de539a5.js": "/precache-manifest.84f5746fa69f514dea3b20df3de539a5.js",
+    "precache-manifest.991deda97797dd64214b6a337266a405.js": "/precache-manifest.991deda97797dd64214b6a337266a405.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.bccb1ead.chunk.js.LICENSE.txt": "/static/js/2.bccb1ead.chunk.js.LICENSE.txt",
     "static/media/SofiaProBlack.woff": "/static/media/SofiaProBlack.4e6c0771.woff",
@@ -34,6 +34,6 @@
   "entrypoints": [
     "static/js/runtime-main.2d3133e2.js",
     "static/js/2.bccb1ead.chunk.js",
-    "static/js/main.7b1304eb.chunk.js"
+    "static/js/main.fe51aeb1.chunk.js"
   ]
 }
