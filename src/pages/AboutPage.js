@@ -36,7 +36,7 @@ export const AboutPage = ({ theme }) => {
           <TextLink href="https://classroomswithoutborders.org/" target="_blank"> Classrooms Without Borders</TextLink>.
         </BodyText>
         <BodyText>
-          Also, I'm passionate about human-centered design, which is why I'm pursuing a Human-Computer
+          I'm passionate about human-centered design, which is why I'm pursuing a Human-Computer
           Interaction specialization and Cognitive Science minor within my degree. I love applying
           interdisciplinary knowledge to design and build products for social good.
         </BodyText>
