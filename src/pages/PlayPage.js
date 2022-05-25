@@ -36,6 +36,12 @@ const StyledA = styled.a`
 
 const writingList = [
     {
+        link: 'https://www.stealthis.org/Database-Column-Encryption-with-Objection-js-3f800343791840f89a2c3d8dc8808d9e',
+        tags: ['Writing', 'Upsolve'],
+        title: "Database Column Encryption with Objection.js",
+        desc: 'Encrypting user data at-rest with Objection.js to enhance database security',
+    },
+    {
         link: 'https://anna-xing.medium.com/a-brief-overview-of-big-tech-illustration-flat-design-corporate-memphis-and-alegria-a9b54a35c6b1',
         tags: ['Writing'],
         title: 'A Brief Overview of Big Tech Illustration',
@@ -70,10 +76,10 @@ const artList = [
         art: sausageBun,
         tag: 'Digital Painting',
     },
-    {
-        art: juicebox,
-        tag: '2.5D Animation (WIP)',
-    },
+    // {
+    //     art: juicebox,
+    //     tag: '2.5D Animation (WIP)',
+    // },
     {
         art: majorTom,
         tag: 'Digital Painting',
