@@ -22,10 +22,10 @@ export const AboutPage = ({ theme }) => {
       </BannerContainer>
       <TextContainer>
         <BodyText>
-          I'm a third-year BCS student at the University of Waterloo, graduating in April 2024.
+          I'm a rising fourth-year BCS student at the University of Waterloo, graduating in April 2024.
           I recently wrapped up a Software Engineering internship at
           <TextLink href="https://upsolve.org/" target="_blank"> Upsolve</TextLink>,
-          a nonprofit legal tech organization helping people access their legal, civil, and human rights through free, user-friendly online tools,
+          an incredible nonprofit legal tech organization helping people access their legal, civil, and human rights through free, user-friendly online tools,
           and redefining what a nonprofit can do with code.
         </BodyText>
         <BodyText>
@@ -41,7 +41,7 @@ export const AboutPage = ({ theme }) => {
           interdisciplinary knowledge to design and build products for social good.
         </BodyText>
         <BodyText>
-          I'm currently seeking opportunities for Fall 2022 in software development, UI/UX, and product.
+          I'm currently seeking opportunities for Summer and Fall 2023 in software development, UI/UX, and product.
         </BodyText>
         <BodyText>
           To chat about anything from software to Spanish basilicas, feel free to connect with
@@ -54,12 +54,11 @@ export const AboutPage = ({ theme }) => {
           When I'm not tinkering with dev tools, you can find me:
           <Typical
             steps={[
-              ' jamming on the ukulele.', theme.transition.typical,
+              ' rock climbing.', theme.transition.typical,
+              ' playing volleyball.', theme.transition.typical,
               ' making art.', theme.transition.typical,
               ' reading pretentious fiction.', theme.transition.typical,
-              ' writing articles and short stories.', theme.transition.typical,
               ' learning about architecture and design.', theme.transition.typical,
-              ' playing volleyball or basketball.', theme.transition.typical,
             ]}
             loop={Infinity}
             wrapper={BodyTextSpan}
