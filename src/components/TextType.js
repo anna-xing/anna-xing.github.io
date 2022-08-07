@@ -15,7 +15,6 @@ export const HeadingText = styled.h2`
     color: ${(props) => props.theme.color.textPrimary};
     margin: ${({theme}) => theme.fontSize.small} 0;
     padding: 0;
-    text-transform: lowercase;
     line-height: ${(props) => props.theme.fontSize.large};
 `;
 
