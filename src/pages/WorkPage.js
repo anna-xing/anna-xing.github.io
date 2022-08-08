@@ -35,7 +35,7 @@ const workList = [
     img: upsolveImg,
   },
   {
-    title: "TD Bank: Portfolio Analytics Developer",
+    title: "TD Asset Management: Portfolio Analytics Developer",
     desc: "Building web applications to support portfolio manager activites.",
     term: "Spring 2021",
     tags: [
