@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.f607f192.chunk.js",
-    "main.js.map": "/static/js/main.f607f192.chunk.js.map",
+    "main.js": "/static/js/main.431c0656.chunk.js",
+    "main.js.map": "/static/js/main.431c0656.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2d3133e2.js",
     "runtime-main.js.map": "/static/js/runtime-main.2d3133e2.js.map",
-    "static/js/2.b434d643.chunk.js": "/static/js/2.b434d643.chunk.js",
-    "static/js/2.b434d643.chunk.js.map": "/static/js/2.b434d643.chunk.js.map",
+    "static/js/2.a13ab53a.chunk.js": "/static/js/2.a13ab53a.chunk.js",
+    "static/js/2.a13ab53a.chunk.js.map": "/static/js/2.a13ab53a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b30560536bdef8b3a0499f405cec6842.js": "/precache-manifest.b30560536bdef8b3a0499f405cec6842.js",
+    "precache-manifest.60d5167516285ce43ed8dc76dd0752b4.js": "/precache-manifest.60d5167516285ce43ed8dc76dd0752b4.js",
     "service-worker.js": "/service-worker.js",
-    "static/js/2.b434d643.chunk.js.LICENSE.txt": "/static/js/2.b434d643.chunk.js.LICENSE.txt",
+    "static/js/2.a13ab53a.chunk.js.LICENSE.txt": "/static/js/2.a13ab53a.chunk.js.LICENSE.txt",
     "static/media/SofiaProBlack.woff": "/static/media/SofiaProBlack.4e6c0771.woff",
     "static/media/SofiaProMedium-Italic.woff": "/static/media/SofiaProMedium-Italic.55ee1f1f.woff",
     "static/media/SofiaProMedium.woff": "/static/media/SofiaProMedium.d356bfed.woff",
@@ -18,9 +18,9 @@
     "static/media/bunny.png": "/static/media/bunny.82ee40bc.png",
     "static/media/cwb.jpg": "/static/media/cwb.3a55aab8.jpg",
     "static/media/fishing.png": "/static/media/fishing.95f48b2a.png",
+    "static/media/gallery-lasers.png": "/static/media/gallery-lasers.f2b243e7.png",
     "static/media/house-fire.jpg": "/static/media/house-fire.373bf442.jpg",
     "static/media/hurr-evac.jpg": "/static/media/hurr-evac.0feae541.jpg",
-    "static/media/juicebox.png": "/static/media/juicebox.b52ad59e.png",
     "static/media/major-tom.jpg": "/static/media/major-tom.b6ec02fb.jpg",
     "static/media/moonshine.jpg": "/static/media/moonshine.c7386ef1.jpg",
     "static/media/mother-tongue.jpg": "/static/media/mother-tongue.0ae56b21.jpg",
@@ -36,7 +36,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2d3133e2.js",
-    "static/js/2.b434d643.chunk.js",
-    "static/js/main.f607f192.chunk.js"
+    "static/js/2.a13ab53a.chunk.js",
+    "static/js/main.431c0656.chunk.js"
   ]
 }
