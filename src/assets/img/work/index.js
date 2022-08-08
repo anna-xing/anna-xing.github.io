@@ -6,3 +6,4 @@ export { default as cwbImg } from './cwb.jpg';
 export { default as upsolveImg } from "./upsolve.jpg";
 export { default as tdBankImg } from "./td-bank.jpg";
 export { default as uWaterlooImg } from "./uwaterloo.jpg";
+export { default as rayTracerImg } from "./gallery-lasers.png";

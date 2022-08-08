@@ -15,9 +15,21 @@ import {
   hurrEvacImg,
   projectPinkImg,
   cwbImg,
+  rayTracerImg,
 } from "./../assets/img/work";
 
 const projectList = [
+  {
+    link: 'https://drive.google.com/file/d/1m23x79qd4DujPXTgJ-zanQvf0AP4MzbJ/view?usp=sharing',
+    title: 'Ray Tracer',
+    desc: 'Photorealistic ray tracer supporting texture mapping, anti-aliasing, reflection, refraction, distributed ray tracing, and more!',
+    tags: [
+      'C++',
+      'OpenGL',
+      'Lua',
+    ],
+    img: rayTracerImg,
+  },
   {
     link: 'https://on-this-day-cwb.herokuapp.com/',
     title: 'Classrooms Without Borders: On This Day',

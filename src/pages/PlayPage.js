@@ -27,7 +27,6 @@ import stillLife from './../assets/img/art/still-life.jpg';
 import houseFire from './../assets/img/art/house-fire.jpg';
 import sausageBun from './../assets/img/art/sausagebun.png';
 import bunny from './../assets/img/art/bunny.png';
-import juicebox from './../assets/img/art/juicebox.png';
 import moonshine from './../assets/img/art/moonshine.jpg';
 
 const StyledA = styled.a`
@@ -76,10 +75,6 @@ const artList = [
         art: sausageBun,
         tag: 'Digital Painting',
     },
-    // {
-    //     art: juicebox,
-    //     tag: '2.5D Animation (WIP)',
-    // },
     {
         art: majorTom,
         tag: 'Digital Painting',
