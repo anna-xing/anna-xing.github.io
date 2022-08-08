@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a9de65be053fdd8a911b4c6846efbf40",
+    "revision": "f28454288d49119a23fa1f0e414a864b",
     "url": "/index.html"
   },
   {
-    "revision": "777c69ee0609dec8899f",
-    "url": "/static/js/2.b434d643.chunk.js"
+    "revision": "a71a278dd02d792e0f28",
+    "url": "/static/js/2.a13ab53a.chunk.js"
   },
   {
     "revision": "a3c66bc87fa121efed0250fdac2dfa2b",
-    "url": "/static/js/2.b434d643.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.a13ab53a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6a91b03e00aeaac6cbb3",
-    "url": "/static/js/main.f607f192.chunk.js"
+    "revision": "3700aa71ce6ed5f3fb33",
+    "url": "/static/js/main.431c0656.chunk.js"
   },
   {
     "revision": "ec37339358264786a889",
@@ -52,16 +52,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/fishing.95f48b2a.png"
   },
   {
+    "revision": "f2b243e747383306e2803a0b3eb003f6",
+    "url": "/static/media/gallery-lasers.f2b243e7.png"
+  },
+  {
     "revision": "373bf4420d41dd538f81c4b57e0ffdad",
     "url": "/static/media/house-fire.373bf442.jpg"
   },
   {
     "revision": "0feae5419c09da53519643b9b339bd29",
     "url": "/static/media/hurr-evac.0feae541.jpg"
-  },
-  {
-    "revision": "b52ad59ecccd5c2657d9486b48735e58",
-    "url": "/static/media/juicebox.b52ad59e.png"
   },
   {
     "revision": "b6ec02fb75f7ab903bc6ea8d022dceb2",
