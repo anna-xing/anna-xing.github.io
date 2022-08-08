@@ -20,7 +20,7 @@ import {
 
 const projectList = [
   {
-    link: 'https://drive.google.com/file/d/1m23x79qd4DujPXTgJ-zanQvf0AP4MzbJ/view?usp=sharing',
+    link: 'https://docs.google.com/presentation/d/e/2PACX-1vRE8ijbGOKa95TCYzODslWPcgK-EF9ipHZNjCUdeBy1drNDF8i2KpBfQH6k42JHS0iY79JXHO3ZqPOk/pub?start=false&loop=false&delayms=10000',
     title: 'Ray Tracer',
     desc: 'Photorealistic ray tracer supporting texture mapping, anti-aliasing, reflection, refraction, distributed ray tracing, and more!',
     tags: [
