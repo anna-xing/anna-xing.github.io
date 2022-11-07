@@ -9,12 +9,41 @@ import {
 } from "./../components";
 
 import {
+  asappImg,
   upsolveImg,
   tdBankImg,
   uWaterlooImg,
 } from "./../assets/img/work";
 
 const workList = [
+  {
+    link: "https://uwaterloo.ca/artificial-intelligence-group",
+    title: "Undergraduate Research Assistant",
+    desc: "Conducting research on AI methods for improving online emotions and behaviour.",
+    term: "Winter 2023",
+    tags: [
+      "Research",
+      "AI",
+      "HCI",
+    ],
+    img: uWaterlooImg,
+  },
+  {
+    link: "https://www.asapp.com",
+    title: "ASAPP: Software Engineer Intern",
+    desc: "Building AI-first tools and platforms to maximize contact center agent efficiency.",
+    term: "Fall 2022",
+    tags: [
+      "TypeScript",
+      "Golang",
+      "React",
+      "GraphQL",
+      "MySQL",
+      "DataDog",
+      "AWS",
+    ],
+    img: asappImg,
+  },
   {
     link: "https://upsolve.org",
     title: "Upsolve: Software Engineer Intern",
