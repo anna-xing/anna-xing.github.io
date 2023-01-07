@@ -24,12 +24,17 @@ export const AboutPage = ({ theme }) => {
         <BodyText>
           I'm a rising fourth-year BCS student at the University of Waterloo, graduating in April 2024.
           I recently wrapped up a Software Engineering internship at
+          <TextLink href="https://www.asapp.com/" target="_blank"> ASAPP</TextLink>,
+	  on the Customer Delivery and Implementation Team, 
+	  where I helped build tools and platforms maximizing contact center agent efficiency through AI.
+	  Right now, I'm working with Prof. Robin Cohen as an undergraduate research assistant to study AI applications for monitoring and regulating social media behaviour.
+        </BodyText>
+        <BodyText>
+	  I've also been a Software Engineer Intern at 
           <TextLink href="https://upsolve.org/" target="_blank"> Upsolve</TextLink>,
           an incredible nonprofit legal tech organization helping people access their legal, civil, and human rights through free, user-friendly online tools,
           and redefining what a nonprofit can do with code.
-        </BodyText>
-        <BodyText>
-          In the past, I've interned as a Portfolio Analytics Developer at TD, as well as
+          Before that, I interned as a Portfolio Analytics Developer at TD, as well as
           a Web Application Developer for UW's Computer Science Computing Facility.
           I've also previously volunteered as a Software Developer and Product Designer at Develop for Good,
           where I helped build a full-stack web app for the educational nonprofit
@@ -37,8 +42,8 @@ export const AboutPage = ({ theme }) => {
         </BodyText>
         <BodyText>
           I'm passionate about human-centered design, which is why I'm pursuing a Human-Computer
-          Interaction specialization and Cognitive Science minor within my degree. I love applying
-          interdisciplinary knowledge to design and build products for social good.
+          Interaction specialization within my degree and double minoring in Cognitive Science and Psychology. 
+	  I love applying interdisciplinary knowledge to design and build products for social good.
         </BodyText>
         <BodyText>
           I'm currently seeking opportunities for Summer and Fall 2023 in software development, UI/UX, and product.
@@ -57,7 +62,7 @@ export const AboutPage = ({ theme }) => {
               ' rock climbing.', theme.transition.typical,
               ' playing volleyball.', theme.transition.typical,
               ' making art.', theme.transition.typical,
-              ' reading pretentious fiction.', theme.transition.typical,
+              ' reading about sustainable cities.', theme.transition.typical,
               ' learning about architecture and design.', theme.transition.typical,
             ]}
             loop={Infinity}
