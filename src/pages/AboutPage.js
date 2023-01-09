@@ -22,15 +22,15 @@ export const AboutPage = ({ theme }) => {
       </BannerContainer>
       <TextContainer>
         <BodyText>
-          I'm a rising fourth-year BCS student at the University of Waterloo, graduating in April 2024.
+          I'm a fourth-year BCS student at the University of Waterloo, graduating in April 2024.
           I recently wrapped up a Software Engineering internship at
-          <TextLink href="https://www.asapp.com/" target="_blank"> ASAPP</TextLink>
+          <TextLink href="https://www.asapp.com/" target="_blank"> ASAPP </TextLink>
 	  on the Customer Delivery and Implementation Team, 
 	  where I helped build tools and platforms maximizing contact center agent efficiency through AI.
 	</BodyText>
 	<BodyText> 
 	  Right now, I'm working with Professor 
-	  <TextLink href="https://cs.uwaterloo.ca/~rcohen/" target="_blank"> Robin Cohen</TextLink>
+	  <TextLink href="https://cs.uwaterloo.ca/~rcohen/" target="_blank"> Robin Cohen </TextLink>
 	  as an undergraduate research assistant to study AI applications for monitoring and improving social media behaviour.
         </BodyText>
         <BodyText>
