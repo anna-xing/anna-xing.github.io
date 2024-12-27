@@ -1,3 +1,1 @@
-# My portfolio site. 
-
-Built with React (create-react-app) and styled-components, with react-typical for the typing animation.
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).
