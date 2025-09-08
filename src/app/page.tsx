@@ -6,12 +6,12 @@ const LINKEDIN_URL = "https://www.linkedin.com/in/anna-xing/";
 
 export default function Home() {
   return (
-    <main className="p-8 min-h-screen">
+    <main className="p-8 min-h-screen flex flex-row items-center">
       <div className="max-w-[400px] mx-auto grid gap-6">
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-4xl">
           Hi! I'm Anna, a full-stack software engineer ◡̈
         </h1>
-        <p className="text-md">
+        <p className="text-lg">
           I like building tech for social good. I'm currently at{" "}
           <Link href="https://www.withpavilion.com" inline>Pavilion</Link>, where we
           help state + local governments serve their communities more
